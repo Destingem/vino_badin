@@ -13,6 +13,8 @@ import AktualityLaptop from "../components/NavBar/forIndex/aktuality/AktualityLa
 import KdeLaptop from "../components/NavBar/forIndex/Kde/KdeLaptop";
 import OnasMobile from "../components/NavBar/forIndex/o-nas/OnasMobile";
 import SortimentMobile from "../components/NavBar/forIndex/sortiment/sortimentMobile";
+import AktualityMobile from "../components/NavBar/forIndex/aktuality/AktualityMobile";
+import KdeMobile from "../components/NavBar/forIndex/Kde/KdeMobile";
 export default function Home() {
   return (
     <>
@@ -217,10 +219,10 @@ export default function Home() {
            <SortimentMobile />
           </section>
           <section className={styles.fourthSection_mobile}>
-            <AktualityLaptop />
+            <AktualityMobile />
           </section>
           <section className={styles.fifthSection_mobile}>
-            <KdeLaptop />
+            <KdeMobile />
           </section>
         </div>
       </Media>
