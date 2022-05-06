@@ -69,6 +69,7 @@ export default function KdeMobile() {
                 borderColor: "black",
                 minWidth: "fit-content",
                 width: "90vw",
+                marginBottom: "5vh"
   
               }}
             >
