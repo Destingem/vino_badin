@@ -197,7 +197,7 @@ export default function Aktuality() {
                 data.map((novinka) => {
                   return (
                     
-                     <Grid.Col span={4}>
+                     <Grid.Col span={6}>
                      <Paper shadow="xl" p={10} sx={{display: "flex", flexDirection: "column"}}>
                         <div
                           style={{
