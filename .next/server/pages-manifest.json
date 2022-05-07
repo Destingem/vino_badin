@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html",
+  "/Media": "pages/Media.html",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/o-nas": "pages/o-nas.html",
+  "/sortiment": "pages/sortiment.html",
+  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
+  "/aktuality": "pages/aktuality.js"
+}
