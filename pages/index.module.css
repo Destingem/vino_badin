@@ -4,6 +4,9 @@
     height: fit-content;
     gap: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  
     
 }
 .firstSection_laptop{
@@ -59,6 +62,8 @@
     height: fit-content;
     gap: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
     
 }
 .firstSection_mobile{

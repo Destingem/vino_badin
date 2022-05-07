@@ -27,7 +27,7 @@ export default function Home() {
       <Media between={["tablet", "laptop"]}>
         <div className={styles.main_laptop}>
           <section className={styles.firstSection_laptop}>
-            <NavBar backgroundColor="transparent" />
+         <NavBar backgroundColor="#eeeeeee2" />
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "6.5vw", marginTop: "10%" }}
@@ -94,7 +94,7 @@ export default function Home() {
       <Media between={["zero", "tablet"]}>
         <div className={styles.main_mobile}>
           <section className={styles.firstSection_mobile}>
-            <NavBar backgroundColor="transparent" />
+            <NavBar backgroundColor="white" />
             <Media between={["zero", "mobile"]}>
             <Text
               size="xl"

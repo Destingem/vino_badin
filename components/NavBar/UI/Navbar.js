@@ -13,12 +13,18 @@ export default function NavBar(props) {
       <Media between={["zero", "mobile"]}>
         <div
           className={styles.main_mobile}
-          style={{ backgroundColor: props.backgroundColor }}
+          style={{
+            backgroundColor: props.backgroundColor,
+            position: "fixed",
+            zIndex: "12000",
+          }}
         >
-          <div className={styles.header_mobile}>
-            <Image src="/images/logo.png" width={"40%"} height={"40%"} />
-            <Text size="xl">Vinařství Badinovi</Text>
-          </div>
+          <Link href="/">
+            <div className={styles.header_mobile}>
+              <Image src="/images/logo.png" width={"40%"} height={"40%"} />
+              <Text size="xl">Vinařství Badinovi</Text>
+            </div>
+          </Link>
           <Burger
             opened={opened}
             onClick={() => setOpened((o) => !o)}
@@ -32,33 +38,42 @@ export default function NavBar(props) {
               padding="xl"
               size="full"
               transition="fade"
-          
               position="right"
             >
               <div className={styles.openedMenu_mobile}>
                 <Paper>
                   <Link href="/">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Hlavní strana</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Hlavní strana
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/o-nas">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >O nás</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      O nás
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/aktuality">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Aktuality</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Aktuality
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/sortiment">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Sortiment</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Sortiment
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/kontakt">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Kontakt</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Kontakt
+                    </Text>
                   </Link>
                 </Paper>
               </div>
@@ -67,15 +82,23 @@ export default function NavBar(props) {
         </div>
       </Media>
       <Media between={["mobile", "tablet"]}>
-      <div
+        <div
           className={styles.main_mobile}
-          style={{ backgroundColor: props.backgroundColor }}
+          style={{
+            backgroundColor: props.backgroundColor,
+            position: "fixed",
+            zIndex: "12000",
+          }}
         >
-          <div className={styles.header_tablet}>
-            <Image src="/images/logo.png" width={"40%"} height={"40%"} />
-            <Link href="/" ><Text size="xl">Vinařství Badinovi</Text></Link>
-            {/* sx={{cursor: "pointer"}}*/}
-          </div>
+          <Link href="/">
+            <div className={styles.header_tablet}>
+              <Image src="/images/logo.png" width={"40%"} height={"40%"} />
+              <Link href="/">
+                <Text size="xl">Vinařství Badinovi</Text>
+              </Link>
+              {/* sx={{cursor: "pointer"}}*/}
+            </div>
+          </Link>
           <Burger
             opened={opened}
             onClick={() => setOpened((o) => !o)}
@@ -83,7 +106,6 @@ export default function NavBar(props) {
           />
           {opened && (
             <Drawer
-             
               opened={opened}
               onClose={() => setOpened(false)}
               title="Navigace"
@@ -94,27 +116,37 @@ export default function NavBar(props) {
               <div className={styles.openedMenu_tablet}>
                 <Paper>
                   <Link href="/">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Hlavní strana</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Hlavní strana
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/o-nas">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >O nás</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      O nás
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/aktuality">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Aktuality</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Aktuality
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/sortiment">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Sortiment</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Sortiment
+                    </Text>
                   </Link>
                 </Paper>
                 <Paper>
                   <Link href="/kontakt">
-                    <Text size="xl" sx={{ fontWeight: 400 }} >Kontakt</Text>
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Kontakt
+                    </Text>
                   </Link>
                 </Paper>
               </div>
@@ -125,19 +157,48 @@ export default function NavBar(props) {
       <Media between={["tablet", "laptop"]}>
         <div
           className={styles.main_laptop}
-          style={{ backgroundColor: props.backgroundColor }}
+          style={{
+            backgroundColor: props.backgroundColor,
+            position: "fixed",
+            zIndex: "12000",
+          }}
         >
-        <div className={styles.header_laptop}>
-          <div style={{display: "flex", justifyContent:"center", alignItems: "center"}}>
-          <Image src="/images/logo.png" width={49} height={44} />
-          <Text size="xl" sx={{ fontSize: "2rem" }}>Vinařství Badinovi</Text>
-          </div>
-          <Grid sx={{margin: 0, width: "maxContent", gap: "5vh", paddingRight: "5%"}}>
-            <Link href="/o-nas"><p>O nás</p></Link>
-            <Link href="/aktuality"><p>Aktuality</p></Link>
-            <Link href="/sortiment"><p>Sortiment</p></Link>
-            <Link href="/kontakt"><p>Kontakt</p></Link>
-          </Grid>
+          <div className={styles.header_laptop}>
+            <Link href="/">
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Image src="/images/logo.png" width={49} height={44} />
+                <Text size="xl" sx={{ fontSize: "2rem" }}>
+                  Vinařství Badinovi
+                </Text>
+              </div>
+            </Link>
+            <Grid
+              sx={{
+                margin: 0,
+                width: "maxContent",
+                gap: "5vh",
+                paddingRight: "5%",
+              }}
+            >
+              <Link href="/o-nas">
+                <p>O nás</p>
+              </Link>
+              <Link href="/aktuality">
+                <p>Aktuality</p>
+              </Link>
+              <Link href="/sortiment">
+                <p>Sortiment</p>
+              </Link>
+              <Link href="/kontakt">
+                <p>Kontakt</p>
+              </Link>
+            </Grid>
           </div>
         </div>
       </Media>
