@@ -1,14 +1,14 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/Media": "pages/Media.html",
+  "/_error": "pages/_error.js",
   "/api/hello": "pages/api/hello.js",
   "/o-nas": "pages/o-nas.html",
   "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
-  "/": "pages/index.js",
   "/aktuality": "pages/aktuality.js",
-  "/sortiment": "pages/sortiment.js",
-  "/sortiment/[detail]": "pages/sortiment/[detail].js"
+  "/": "pages/index.js",
+  "/sortiment/[detail]": "pages/sortiment/[detail].js",
+  "/sortiment": "pages/sortiment.js"
 }

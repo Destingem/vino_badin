@@ -34,40 +34,131 @@ var Navbar = __webpack_require__(2644);
 var Media = __webpack_require__(6447);
 // EXTERNAL MODULE: ./components/NavBar/UI/Footer.js
 var Footer = __webpack_require__(8754);
+;// CONCATENATED MODULE: external "react-responsive-carousel"
+const external_react_responsive_carousel_namespaceObject = require("react-responsive-carousel");
 ;// CONCATENATED MODULE: ./components/forSortiment/DetailMobile.js
+
+
 
 
 
 function DetailMobile(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+            /*#__PURE__*/ jsx_runtime_.jsx("div", {
                 style: {
                     marginTop: "10vh",
                     justifyContent: "center",
-                    textAlign: "center",
-                    padding: "0 5vw 3vw 5vw"
+                    textAlign: "left",
+                    padding: "0 5vw 3vw 5vw",
+                    justifySelf: "center"
                 },
-                children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                        size: "xl",
-                        sx: {
-                            color: "black",
-                            fontSize: props.data.nadpis.length < 20 ? "10vw" : "4vw",
-                            marginTop: "0",
-                            padding: "5vw 5vw 2vw 5vw",
-                            fontWeight: "600",
-                            textAlign: "center"
-                        },
-                        children: props.data.nadpis
-                    }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                        sx: {
-                            textAlign: "left"
-                        },
-                        children: props.data.text
-                    })
-                ]
+                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                    style: {
+                        display: "flex",
+                        flexDirection: "column"
+                    },
+                    children: [
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            style: {
+                                textAlign: "center"
+                            },
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                size: "xl",
+                                sx: {
+                                    color: "black",
+                                    fontSize: props.data.nadpis.length < 20 ? "10vw" : "3vw",
+                                    marginTop: "0",
+                                    fontWeight: "600"
+                                },
+                                children: props.data.nadpis
+                            })
+                        }),
+                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                            style: {},
+                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_responsive_carousel_namespaceObject.Carousel, {
+                                showArrows: true,
+                                children: [
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        children: props.data.hlavniObrazek ? /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: props.data.hlavniObrazek.sizes.medium_large
+                                        }) : /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: "/images/vinoplaceholder.svg",
+                                            width: "546px",
+                                            height: "375px"
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        children: props.data.obrazek2 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: props.data.obrazek2.sizes.medium_large
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        children: props.data.obrazek3 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: props.data.obrazek3.sizes.medium_large
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        children: props.data.obrazek4 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: props.data.obrazek4.sizes.medium_large
+                                        })
+                                    }),
+                                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                        children: props.data.obrazek5 && /*#__PURE__*/ jsx_runtime_.jsx("img", {
+                                            src: props.data.obrazek5.sizes.medium_large
+                                        })
+                                    })
+                                ]
+                            })
+                        }),
+                        /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Spoiler, {
+                                    maxHeight: 220,
+                                    showLabel: "Zobrazit cel\xfd popis",
+                                    hideLabel: "Skr\xfdt cel\xfd popis",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            textAlign: "left"
+                                        },
+                                        children: props.data.text
+                                    })
+                                }),
+                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                                    style: {
+                                        marginTop: "20%"
+                                    },
+                                    children: [
+                                        props.data.cena && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Text, {
+                                            size: "xl",
+                                            weight: 600,
+                                            sx: {
+                                                fontSize: "4vh"
+                                            },
+                                            children: [
+                                                props.data.cena,
+                                                " K\u010D"
+                                            ]
+                                        }),
+                                        props.data.cenaBezDPH && /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Text, {
+                                            size: "xl",
+                                            weight: 300,
+                                            sx: {
+                                                fontSize: "2vh"
+                                            },
+                                            children: [
+                                                "Cena bez DPH ",
+                                                props.data.cenaBezDPH,
+                                                " K\u010D"
+                                            ]
+                                        })
+                                    ]
+                                })
+                            ]
+                        })
+                    ]
+                })
             }),
             props.data.priloha && /*#__PURE__*/ jsx_runtime_.jsx("a", {
                 download: true,
@@ -76,14 +167,13 @@ function DetailMobile(props) {
                     color: "gray",
                     sx: {
                         backgroundColor: "rgb(147, 37, 37)",
-                        margin: "0 5vw 3vw 5vw",
-                        width: "100%"
+                        margin: "0 5vw 3vw 5vw"
                     },
                     children: props.data.priloha.filename
                 })
             }),
             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                href: "/aktuality",
+                href: "/sortiment",
                 children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
                     href: "#",
                     color: "gray",
@@ -167,8 +257,6 @@ function DetailTablet(props) {
 
 // EXTERNAL MODULE: external "react"
 var external_react_ = __webpack_require__(6689);
-;// CONCATENATED MODULE: external "react-responsive-carousel"
-const external_react_responsive_carousel_namespaceObject = require("react-responsive-carousel");
 ;// CONCATENATED MODULE: ./components/forSortiment/DetailLaptop.js
 
 
@@ -409,7 +497,8 @@ function DetailLaptop(props) {
                 style: {
                     display: "flex",
                     flexDirection: "column",
-                    minHeight: "92vh"
+                    minHeight: "92vh",
+                    width: "100vw"
                 },
                 children: [
                     /*#__PURE__*/ jsx_runtime_.jsx(Navbar/* default */.Z, {
@@ -420,6 +509,9 @@ function DetailLaptop(props) {
                             "zero",
                             "mobile"
                         ],
+                        style: {
+                            width: "100%"
+                        },
                         children: /*#__PURE__*/ jsx_runtime_.jsx(DetailMobile, {
                             data: data
                         })
