@@ -304,7 +304,7 @@ export default function Aktuality(props) {
                   return (
                     
                      <Grid.Col span={4} key={novinka.id}>
-                     <Paper shadow="xl" p={10} sx={{display: "flex", flexDirection: "column"}}>
+                     <Paper shadow="xl" p={10} sx={{display: "flex", flexDirection: "column", width: "100%", height: "100%"}}>
                         <div
                           style={{
                             display: "flex",
@@ -347,9 +347,9 @@ export default function Aktuality(props) {
                           </div>
                           <Text
                             size="xl"
-                            sx={{ fontWeight: "400", fontSize: "6vmin" }}
+                            sx={{ fontWeight: "400", fontSize: "2.5rem" }}
                           >
-                            {novinka.nadpis.slice(0,50)}
+                            {novinka.nadpis.slice(0,35)}
                           </Text>
                         </div>
                         <Text>{novinka.text.slice(0, 250)}</Text>
@@ -388,7 +388,7 @@ export async function getStaticProps() {
   const posts = await res.json()
   var data = []
   for (let aktualita in posts){
-    data.unshift({nadpis: posts[aktualita].title.rendered , datum:  posts[aktualita].x_date, text:  posts[aktualita].content.rendered.replace("<p>", "").replace("</p>", ""), image: posts[aktualita].acf.fotka, image: posts[aktualita].acf.priloha, id: posts[aktualita].id})
+    data.unshift({nadpis: posts[aktualita].title.rendered , datum:  posts[aktualita].x_date, text:  posts[aktualita].content.rendered.replace("<p>", "").replace("</p>", ""), image: posts[aktualita].acf.fotka, priloha: posts[aktualita].acf.priloha, id: posts[aktualita].id})
   }
   return {
     props: {

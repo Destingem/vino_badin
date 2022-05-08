@@ -4,28 +4,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { MdArrowForwardIos } from "react-icons/md";
 
-export default function SortimentMobile() {
-  const [data, setData] = useState([
-    {
-      img: "/images/mplahev.png",
-      nazev: "Modrý portugal",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "139",
-      rocnik: "2018",
-    },
-    {
-      img: "/images/svatovav.png",
-      nazev: "Svatovavřinecké",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "249",
-      rocnik: "2018",
-    },
-   
-  ]);
+export default function SortimentMobile(props) {
+console.log(props);
   return (
     <>
+
       <div
         style={{
           padding: "0 2vw 0 5vw",
@@ -75,9 +58,9 @@ export default function SortimentMobile() {
           marginTop: "10vh",
         }}
       >
-        {data &&
-          data[0] &&
-          data.map((vino) => {
+        {props.vina &&
+          props.vina[0] &&
+          props.vina.map((vino) => {
             return (
               <div style={{justifyContent: "center"}}>
                 <Card
@@ -89,12 +72,12 @@ export default function SortimentMobile() {
                   }}
                 >
                   <Card.Section>
-                    <Image
-                      src={vino.img}
-                      layout="responsive"
-                      width={1536}
-                      height={1024}
-                    />
+                
+                  { vino.image ? <Image  src={vino.image.sizes.medium_large}
+                    layout="responsive"
+                    width={vino.image.sizes["medium_large-width"]}
+                    height={vino.image.sizes["medium_large-height"]}/> : <Image  src="/images/vinoplaceholder.svg"
+                    layout="responsive" width={1200} height={1200} />}
                   </Card.Section>
                   <Group sx={{ justifyContent: "space-between" }}>
                     <Text weight={700} size="lg">
@@ -102,7 +85,9 @@ export default function SortimentMobile() {
                     </Text>
                     <Badge>{vino.rocnik}</Badge>
                   </Group>
-                  <Text>{vino.popis}</Text>
+                  <Text >{vino.text}</Text>
+                  <Text weight={600} size="xl" sx={{position: "absolute", bottom: "5%"}}>{vino.cena} Kč</Text>
+                  <Link href={"/sortiment/" + vino.id}>
                   <Button
                     sx={{
                       aspectRatio: 1,
@@ -110,9 +95,10 @@ export default function SortimentMobile() {
                       textAlign: "right",
                       alignSelf: "flex-end",
                     }}
-                  >
-                    <MdArrowForwardIos />
+                  ><MdArrowForwardIos />
                   </Button>
+                  </Link>
+                    
                 </Card>
               </div>
             );

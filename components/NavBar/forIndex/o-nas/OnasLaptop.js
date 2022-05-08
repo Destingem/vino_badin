@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Button, Text } from "@mantine/core"
 import Image from "next/image"
-
+import { Loader } from "@mantine/core"
 export default function OnasLaptop(){
 
     return(
@@ -64,6 +64,7 @@ export default function OnasLaptop(){
           width={800}
           height={800}
           style={{ borderRadius: "3px" }}
+          
         />
       </div>
        </>

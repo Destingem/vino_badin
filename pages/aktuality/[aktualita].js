@@ -13,7 +13,7 @@ export default function Aktualita(props){
         )
         
     }
-    var data =  {nadpis: props.data[0].title.rendered , datum:  props.data[0].x_date, text:  props.data[0].content.rendered.replace("<p>", "").replace("</p>", "").replace(".</p>", ""), image: props.data[0].acf.fotka, image: props.data[0].acf.priloha, id: props.data[0].id}
+    var data =  {nadpis: props.data[0].title.rendered , datum:  props.data[0].x_date, text:  props.data[0].content.rendered.replace("<p>", "").replace("</p>", "").replace(".</p>", ""), image: props.data[0].acf.fotka, priloha: props.data[0].acf.priloha, id: props.data[0].id}
     const items = [
         { title: 'Aktuality', href: '/aktuality' },
         { title: data.nadpis.slice(0, 30), href: '#' },
@@ -55,7 +55,8 @@ export default function Aktualita(props){
                <Text weight={600}  >{data.datum}</Text>
                <Text sx={{textAlign: "left"}}>{data.text}</Text>
            </div>
-           <Link href="/aktuality"><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>Zpět na aktuality</Button></Link>
+          {data.priloha &&  <a  download href={data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>{data.priloha.filename}</Button></a>}
+           <Link href="/aktuality"><Button  href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>Zpět na aktuality</Button></Link>
        </Media>
        <Media between={["mobile", "tablet"]}>
        <div style={{marginTop: "10vh", justifyContent: "center", textAlign: "center", padding: "0 5vw 3vw 5vw"}}>
@@ -76,6 +77,7 @@ export default function Aktualita(props){
                <Text sx={{textAlign: "left"}}>{data.text}</Text>
                
            </div>
+           {data.priloha &&  <a download href={data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>{data.priloha.filename}</Button></a>}
            <Link href="/aktuality"><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>Zpět na aktuality</Button></Link>
         
        </Media>
@@ -98,7 +100,8 @@ export default function Aktualita(props){
                <Text weight={600}>{data.datum}</Text>
                <Text size="xl" sx={{textAlign: "left"}}>{data.text}</Text>
            </div>
-           <Link href="/aktuality"><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>Zpět na aktuality</Button></Link>
+           {data.priloha &&  <a download href={data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>{data.priloha.filename}</Button></a>}
+           <Link href="/aktuality"><Button href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>Zpět na aktuality</Button></Link>
            </Media>
        </div>
        
