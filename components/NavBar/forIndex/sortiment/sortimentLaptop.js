@@ -3,41 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
-export default function SortimentLaptop() {
-  const [data, setData] = useState([
-    {
-      img: "/images/mplahev.png",
-      nazev: "Modrý portugal",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "139",
-      rocnik: "2018",
-    },
-    {
-      img: "/images/svatovav.png",
-      nazev: "Svatovavřinecké",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "249",
-      rocnik: "2018",
-    },
-    {
-      img: "/images/zwei.png",
-      nazev: "Zweigeltrebe",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "199",
-      rocnik: "2018",
-    },
-    {
-      img: "/images/frankovka.png",
-      nazev: "Frankovka",
-      popis:
-        "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-      cena: "169",
-      rocnik: "2018",
-    },
-  ]);
+export default function SortimentLaptop(props) {
+console.log(props);
   return (
     <>
       <div
@@ -82,23 +49,30 @@ export default function SortimentLaptop() {
           
         }}
       >
-        {data &&
-          data[0] &&
-          data.map((vino) => {
+        {props.vina &&
+          props.vina[0] &&
+          props.vina.map((vino) => {
             return (
               <Grid.Col span={3} sx={{aspectRatio: 1}}>
                 <Card shadow="md" sx={{display: "flex", flexDirection: "column", textAlign: "left"}}>
                   <Card.Section>
-                    <Image src={vino.img} layout="responsive" width={1536} height={1024} />
+                    <Image  src={vino.image.sizes.medium_large}
+                      layout="responsive"
+                      width={vino.image.sizes["medium_large-width"]}
+                      height={vino.image.sizes["medium_large-height"]}/>
                   </Card.Section>
                   <Group sx={{justifyContent: "space-between"}}>
                     <Text weight={700} size="lg" >{vino.nazev}</Text>
                     <Badge>{vino.rocnik}</Badge>
                   </Group>
-                  <Text>{vino.popis}</Text>
+                  <Text>{vino.text}</Text>
+                  <Text weight={600} size="xl" sx={{position: "absolute", bottom: "5%"}}>{vino.cena} Kč</Text>
+                  <Link href={"/sortiment/" + vino.id}>
                   <Button sx={{ aspectRatio: 1, marginTop: "3vh", textAlign: "right", alignSelf: "flex-end" }}>
+                  
                     <MdArrowForwardIos />
                   </Button>
+                  </Link>
                 </Card>
               </Grid.Col>
             );

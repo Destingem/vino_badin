@@ -15,7 +15,11 @@ import OnasMobile from "../components/NavBar/forIndex/o-nas/OnasMobile";
 import SortimentMobile from "../components/NavBar/forIndex/sortiment/sortimentMobile";
 import AktualityMobile from "../components/NavBar/forIndex/aktuality/AktualityMobile";
 import KdeMobile from "../components/NavBar/forIndex/Kde/KdeMobile";
-export default function Home() {
+import { useState } from "react";
+import Loader from "../components/Loader";
+import Router from "next/router"
+export default function Home(props) {
+ 
   return (
     <>
       <Head>
@@ -81,10 +85,10 @@ export default function Home() {
            <OnasLaptop />
           </section>
           <section className={styles.thirdSection_laptop}>
-            <SortimentLaptop />
+            <SortimentLaptop vina={props.vina.slice(0, 4)} />
           </section>
           <section className={styles.fourthSection_laptop}>
-            <AktualityLaptop />
+            <AktualityLaptop data={props.aktuality} />
           </section>
           <section className={styles.fifthSection_laptop}>
             <KdeLaptop />
@@ -216,10 +220,10 @@ export default function Home() {
            <OnasMobile />
           </section>
           <section className={styles.thirdSection_mobile}>
-           <SortimentMobile />
+           <SortimentMobile vina={props.vina.slice(0, 2)}/>
           </section>
           <section className={styles.fourthSection_mobile}>
-            <AktualityMobile />
+            <AktualityMobile data={props.aktuality}/>
           </section>
           <section className={styles.fifthSection_mobile}>
             <KdeMobile />
@@ -229,4 +233,34 @@ export default function Home() {
       <Footer />
     </>
   );
+}
+export async function getStaticProps() {
+  const res = await fetch("http://206.189.56.129/wp-json/wp/v2/aktuality")
+  const posts = await res.json()
+  var aktuality = []
+  for (let aktualita in posts){
+    aktuality.push({nadpis: posts[aktualita].title.rendered , datum:  posts[aktualita].x_date, text:  posts[aktualita].content.rendered.replace(/(<([^>]+)>)/gi, ""), image: posts[aktualita].acf.fotka, priloha: posts[aktualita].acf.priloha, id: posts[aktualita].id})
+  }
+  aktuality = aktuality.slice(0, 4)
+
+  const res_vina = await fetch("http://206.189.56.129/wp-json/wp/v2/sortiment")
+  const raw_vina = await res_vina.json()
+  var vina = []
+  for(let vino in raw_vina){
+    if (raw_vina[vino].acf.na_hlavni_strane == true) {
+      vina.push({image: raw_vina[vino].acf.hlavni_obrazek, nazev: raw_vina[vino].title.rendered, text: raw_vina[vino].acf.kratky_popis.replace(/(<([^>]+)>)/gi, ""), rocnik: raw_vina[vino].acf.rocnik, cena: raw_vina[vino].acf.cena,  id: raw_vina[vino].id})
+    
+    }
+  }
+ ;
+  return {
+    props: {
+     aktuality,
+     vina,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 10, // In seconds
+  }
 }

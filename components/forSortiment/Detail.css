@@ -1,0 +1,22 @@
+.thumb{
+    aspect-ratio: 1;
+}
+.carousel .control-next.control-arrow:before {
+    border-left:8px solid rgb(147, 37, 37);
+}
+.carousel-status {
+    color: rgb(147, 37, 37);
+    background-color: rgb(147, 37, 37);
+    border-radius: 3px;
+}
+.carousel .thumb.selected{
+   
+    border: 3px solid rgb(147, 37, 37)  !important;
+}
+.carousel .thumb:hover{
+    border: 3px solid rgb(173, 51, 51)  !important;
+}
+.dot{
+    background-color: rgb(173, 51, 51) !important;
+    box-shadow: none !important;
+}

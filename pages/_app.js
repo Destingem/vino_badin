@@ -2,8 +2,10 @@ import '../styles/globals.css'
 import {MantineProvider} from "@mantine/core"
 import { MediaContextProvider } from './Media'
 import { useEffect, useState } from 'react';
+import "../components/forSortiment/Detail.css"
 function MyApp({ Component, pageProps }) {
   const [showChild, setShowChild] = useState(false);
+  
   useEffect(() => {
     setShowChild(true);
   }, []);

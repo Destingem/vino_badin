@@ -2,25 +2,8 @@ import { Button, Card, Grid, Text } from "@mantine/core";
 import { useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
-export default function AktualityMobile() {
-  const [data, setData] = useState([
-    {
-      nadpis: "This is a header",
-      text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-    },
-    {
-      nadpis: "This is a header",
-      text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. ",
-    },
-    {
-      nadpis: "This is a header",
-      text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-    },
-    {
-      nadpis: "This is a header",
-      text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
-    },
-  ]);
+export default function AktualityMobile(props) {
+console.log(props);
   return (
     <>
       <div
@@ -66,8 +49,8 @@ export default function AktualityMobile() {
           flexDirection: "column",
         }}
       >
-        {data &&
-          data.map((aktualita) => {
+        {props.data &&
+          props.data.map((aktualita) => {
             return (
               <div style={{ padding: "2vh 1vh 2vw 1vh" }}>
                 <Card
@@ -80,12 +63,15 @@ export default function AktualityMobile() {
                   }}
                 >
                   <Text size="lg" weight={700} sx={{ width: "100%" }}>
-                    {aktualita.nadpis}
+                    {aktualita.nadpis.slice(0, 30)}
                   </Text>
-                  <Text>{aktualita.text}</Text>
+                  <Text>{aktualita.text.slice(0, 150)}</Text>
+                 
+                  <Link href={"/aktuality/" + aktualita.id}>
                   <Button sx={{ aspectRatio: 1, marginTop: "3vh" }}>
                     <MdArrowForwardIos />
                   </Button>
+                  </Link>
                 </Card>
               </div>
             );

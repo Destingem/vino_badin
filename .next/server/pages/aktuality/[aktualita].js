@@ -42,7 +42,7 @@ function Aktualita(props) {
         datum: props.data[0].x_date,
         text: props.data[0].content.rendered.replace("<p>", "").replace("</p>", "").replace(".</p>", ""),
         image: props.data[0].acf.fotka,
-        image: props.data[0].acf.priloha,
+        priloha: props.data[0].acf.priloha,
         id: props.data[0].id
     };
     const items = [
@@ -131,9 +131,23 @@ function Aktualita(props) {
                                     })
                                 ]
                             }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw",
+                                        width: "100%"
+                                    },
+                                    children: data.priloha.filename
+                                })
+                            }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                                 href: "/aktuality",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    href: "#",
                                     color: "gray",
                                     sx: {
                                         backgroundColor: "rgb(147, 37, 37)",
@@ -182,6 +196,18 @@ function Aktualita(props) {
                                         children: data.text
                                     })
                                 ]
+                            }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: data.priloha.filename
+                                })
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                                 href: "/aktuality",
@@ -236,9 +262,22 @@ function Aktualita(props) {
                                     })
                                 ]
                             }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: data.priloha.filename
+                                })
+                            }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                                 href: "/aktuality",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    href: "#",
                                     color: "gray",
                                     sx: {
                                         backgroundColor: "rgb(147, 37, 37)",

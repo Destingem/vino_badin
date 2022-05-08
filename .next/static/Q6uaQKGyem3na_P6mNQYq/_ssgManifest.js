@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Faktuality","\u002Faktuality\u002F[aktualita]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
