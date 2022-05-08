@@ -46,10 +46,10 @@ export default function VinoDetail(props) {
         <link rel="icon" href="/images/logo.png" />
       </Head>
       <div
-        style={{ display: "flex", flexDirection: "column", minHeight: "92vh" }}
+        style={{ display: "flex", flexDirection: "column", minHeight: "92vh", width: "100vw"}}
       >
         <NavBar backgroundColor="#eeeeee" />
-        <Media between={["zero", "mobile"]}>
+        <Media between={["zero", "mobile"]} style={{width: "100%"}}>
           <DetailMobile data={data} />
         </Media>
         <Media between={["mobile", "tablet"]}>
