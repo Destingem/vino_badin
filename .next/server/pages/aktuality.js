@@ -445,7 +445,7 @@ function Aktuality(props) {
                                                                             fontWeight: "700",
                                                                             fontSize: "1.5rem"
                                                                         },
-                                                                        children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum, "D-M-YYYY").format("D")
+                                                                        children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum, "D-M-YYYY").format("D") !== "Invalid Date" && dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum, "D-M-YYYY").format("D")
                                                                     }),
                                                                     /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                                                                         style: {
@@ -458,7 +458,7 @@ function Aktuality(props) {
                                                                                     fontWeight: "400",
                                                                                     fontSize: "1rem"
                                                                                 },
-                                                                                children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum).format("M")
+                                                                                children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum, "D-M-YYYY").format("M") !== "Invalid Date" && dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum).format("M")
                                                                             }),
                                                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
                                                                                 size: "xl",
@@ -466,7 +466,7 @@ function Aktuality(props) {
                                                                                     fontWeight: "400",
                                                                                     fontSize: "1rem"
                                                                                 },
-                                                                                children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum).format("YYYY")
+                                                                                children: dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum, "D-M-YYYY").format("YYYY") !== "Invalid Date" && dayjs__WEBPACK_IMPORTED_MODULE_6___default()(novinka.datum).format("YYYY")
                                                                             })
                                                                         ]
                                                                     })
