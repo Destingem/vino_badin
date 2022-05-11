@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/9UuMqwTwWHj6jqjR6mDlM/_buildManifest.js",
-    "static/9UuMqwTwWHj6jqjR6mDlM/_ssgManifest.js",
-    "static/9UuMqwTwWHj6jqjR6mDlM/_middlewareManifest.js"
+    "static/1_QlBmu-roF_DcQEQUm1N/_buildManifest.js",
+    "static/1_QlBmu-roF_DcQEQUm1N/_ssgManifest.js",
+    "static/1_QlBmu-roF_DcQEQUm1N/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -54,7 +54,7 @@
       "static/chunks/60-90049b8dedf00733.js",
       "static/chunks/66-a6e2fdf918fc106a.js",
       "static/css/36e1c6cfe9a259d6.css",
-      "static/chunks/pages/aktuality-b45af1eeb9acc0a0.js"
+      "static/chunks/pages/aktuality-b8c9a3319f550348.js"
     ],
     "/aktuality/[aktualita]": [
       "static/chunks/webpack-d7b038a63b619762.js",

@@ -328,20 +328,20 @@ export default function Aktuality(props) {
                               size="xl"
                               sx={{ fontWeight: "700", fontSize: "1.5rem" }}
                             >
-                              {dayjs(novinka.datum.replace("-", "/"), "D-M-YYYY").format("D")}
+                              {dayjs(novinka.datum.replace("-", "/"), "D-M-YYYY").format("D") !== "Invalid Date" ? dayjs(novinka.datum.replace("-", "/"), "D-M-YYYY").format("D") : novinka.datum}
                             </Text>
                             <div style={{ display: "flex" }}>
                               <Text
                                 size="xl"
                                 sx={{ fontWeight: "400", fontSize: "1rem" }}
                               >
-                                {dayjs(novinka.datum.replace("-", "/")).format("M")}
+                                {dayjs(novinka.datum.replace("-", "/")).format("M") !== "Invalid Date" && dayjs(novinka.datum.replace("-", "/")).format("M")}
                               </Text>
                               <Text
                                 size="xl"
                                 sx={{ fontWeight: "400", fontSize: "1rem" }}
                               >
-                                {dayjs(novinka.datum.replace("-", "/")).format("YYYY")}
+                                {dayjs(novinka.datum.replace("-", "/")).format("YYYY") !== "Invalid Date" && dayjs(novinka.datum.replace("-", "/")).format("YYYY")}
                               </Text>
                             </div>
                           </div>
