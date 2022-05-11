@@ -318,7 +318,7 @@ export default function Aktuality(props) {
                               alignItems: "center",
                               backgroundColor: "#A54E4E",
                               color: "#fff",
-                              height: "100%",
+                              height: "fit-content",
                               flexDirection: "column",
                               padding: "2% 5% ",
                               borderRadius: "3px",
