@@ -8,8 +8,8 @@
   "/kontakt": "pages/kontakt.html",
   "/o-nas": "pages/o-nas.html",
   "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
+  "/aktuality": "pages/aktuality.js",
   "/sortiment": "pages/sortiment.js",
   "/": "pages/index.js",
-  "/aktuality": "pages/aktuality.js",
   "/sortiment/[detail]": "pages/sortiment/[detail].js"
 }
