@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdArrowForwardIos } from "react-icons/md";
 export default function SortimentLaptop(props) {
-console.log(props);
+
   return (
     <>
       <div

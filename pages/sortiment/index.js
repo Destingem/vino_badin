@@ -11,7 +11,7 @@ import MobileSortiment from "../../components/forSortiment/MobileSortiment";
 import TabletSortiment from "../../components/forSortiment/TabletSortiment";
 import LaptopSortiment from "../../components/forSortiment/LaptopSortiment";
 export default function Sortiment(props) {
-  console.log(props);
+  console.log("", props);
   var data = []
   
   return (
