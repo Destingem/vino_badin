@@ -8,7 +8,7 @@ import Footer from "../../components/NavBar/UI/Footer";
 import { MdArrowForwardIos } from "react-icons/md";
 import Link from "next/link";
 export default function Aktuality(props) {
-  console.log(props);
+  console.log("", props);
   var data = []
   
   return (

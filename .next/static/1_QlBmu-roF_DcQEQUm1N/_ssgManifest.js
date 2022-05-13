@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002F","\u002Faktuality","\u002Fsortiment","\u002Fsortiment\u002F[detail]","\u002Faktuality\u002F[aktualita]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

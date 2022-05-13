@@ -28,13 +28,13 @@ export default function Home(props) {
         <link rel="icon" href="/images/logo.png" />
       </Head>
 
-      <Media between={["tablet", "laptop"]}>
+      <Media between={["tablet", "tv"]}>
         <div className={styles.main_laptop}>
           <section className={styles.firstSection_laptop}>
          <NavBar backgroundColor="#eeeeeee2" />
             <Text
               size="xl"
-              sx={{ color: "#C4C4C4", fontSize: "6.5vw", marginTop: "10%" }}
+              sx={{ color: "#C4C4C4", fontSize: "6.5vw", marginTop: "17%" }}
             >
               Vinařství Badinovi
             </Text>
@@ -102,7 +102,7 @@ export default function Home(props) {
             <Media between={["zero", "mobile"]}>
             <Text
               size="xl"
-              sx={{ color: "#C4C4C4", fontSize: "13vw", marginTop: "10vh" }}
+              sx={{ color: "#C4C4C4", fontSize: "13vw", marginTop: "14vh" }}
             >
               Vinařství
             </Text>
@@ -159,7 +159,7 @@ export default function Home(props) {
             <Media between={["mobile", "tablet"]}>
             <Text
               size="xl"
-              sx={{ color: "#C4C4C4", fontSize: "10vw", marginTop: "7vh" }}
+              sx={{ color: "#C4C4C4", fontSize: "10vw", marginTop: "15vh" }}
             >
               Vinařství
             </Text>
