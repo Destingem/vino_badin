@@ -1,5 +1,15 @@
 {
+  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
+  "/Media": "pages/Media.html",
+  "/api/hello": "pages/api/hello.js",
+  "/kontakt": "pages/kontakt.html",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/o-nas": "pages/o-nas.html",
+  "/sortiment/[detail]": "pages/sortiment/[detail].js",
+  "/404": "pages/404.html",
+  "/": "pages/index.js",
+  "/aktuality": "pages/aktuality.js",
+  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
+  "/sortiment": "pages/sortiment.js"
 }
