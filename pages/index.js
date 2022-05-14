@@ -220,7 +220,7 @@ export default function Home(props) {
            <OnasMobile />
           </section>
           <section className={styles.thirdSection_mobile}>
-           <SortimentMobile vina={props.vina.slice(0, 2)}/>
+           <SortimentMobile vina={props.vina.slice(0, 2)} vinaTablet={props.vina.slice(0, 4)}/>
           </section>
           <section className={styles.fourthSection_mobile}>
             <AktualityMobile data={props.aktuality}/>
