@@ -484,64 +484,137 @@ function KdeLaptop() {
 
 
 
+
 function OnasMobile() {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                size: "xl",
-                sx: {
-                    color: "black",
-                    fontSize: "10vw",
-                    marginTop: "0",
-                    padding: "5vw 5vw 2vw 5vw",
-                    fontWeight: "600",
-                    textAlign: "center"
-                },
-                children: "O n\xe1s"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                style: {
-                    display: "flex",
-                    padding: "0 5vw 0 0"
-                },
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    style: {
-                        padding: "0 2vw 0 5vw",
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "space-between"
-                    },
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                            size: "xl",
-                            sx: {
-                                color: "black",
-                                fontSize: "5vw",
-                                marginTop: "0",
-                                padding: "0 0 2vw 0",
-                                fontWeight: "400"
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Media.Media, {
+                between: [
+                    "zero",
+                    "mobile"
+                ],
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                        size: "xl",
+                        sx: {
+                            color: "black",
+                            fontSize: "10vw",
+                            marginTop: "0",
+                            padding: "5vw 5vw 2vw 5vw",
+                            fontWeight: "600",
+                            textAlign: "center"
+                        },
+                        children: "O n\xe1s"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        style: {
+                            display: "flex",
+                            padding: "0 5vw 0 0"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            style: {
+                                padding: "0 2vw 0 5vw",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between"
                             },
-                            children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                            href: "/o-nas",
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                                color: "gray",
-                                variant: "outline",
-                                radius: "sm",
-                                size: "xl",
-                                sx: {
-                                    color: "black",
-                                    borderColor: "black",
-                                    width: "100%",
-                                    minWidth: "fit-content",
-                                    marginTop: "2vh"
-                                },
-                                children: "O n\xe1s"
-                            })
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                    size: "xl",
+                                    sx: {
+                                        color: "black",
+                                        fontSize: "5vw",
+                                        marginTop: "0",
+                                        padding: "0 0 2vw 0",
+                                        fontWeight: "400"
+                                    },
+                                    children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/o-nas",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                        color: "gray",
+                                        variant: "outline",
+                                        radius: "sm",
+                                        size: "xl",
+                                        sx: {
+                                            color: "black",
+                                            borderColor: "black",
+                                            width: "100%",
+                                            minWidth: "fit-content",
+                                            marginTop: "2vh"
+                                        },
+                                        children: "O n\xe1s"
+                                    })
+                                })
+                            ]
                         })
-                    ]
-                })
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Media.Media, {
+                between: [
+                    "mobile",
+                    "tablet"
+                ],
+                children: [
+                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                        size: "xl",
+                        sx: {
+                            color: "black",
+                            fontSize: "6vw",
+                            marginTop: "0",
+                            padding: "5vw 5vw 2vw 5vw",
+                            fontWeight: "600",
+                            textAlign: "center"
+                        },
+                        children: "O n\xe1s"
+                    }),
+                    /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                        style: {
+                            display: "flex",
+                            padding: "0 5vw 0 0"
+                        },
+                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                            style: {
+                                padding: "0 2vw 0 5vw",
+                                display: "flex",
+                                flexDirection: "column",
+                                justifyContent: "space-between"
+                            },
+                            children: [
+                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                    size: "xl",
+                                    sx: {
+                                        color: "black",
+                                        fontSize: "3vw",
+                                        marginTop: "0",
+                                        padding: "0 0 2vw 0",
+                                        fontWeight: "400"
+                                    },
+                                    children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                                }),
+                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                    href: "/o-nas",
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                        color: "gray",
+                                        variant: "outline",
+                                        radius: "sm",
+                                        size: "xl",
+                                        sx: {
+                                            color: "black",
+                                            borderColor: "black",
+                                            width: "25%",
+                                            minWidth: "fit-content",
+                                            marginTop: "2vh"
+                                        },
+                                        children: "O n\xe1s"
+                                    })
+                                })
+                            ]
+                        })
+                    })
+                ]
             })
         ]
     });
@@ -554,141 +627,295 @@ function OnasMobile() {
 
 
 
+
 function SortimentMobile(props) {
     console.log(props);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                style: {
-                    padding: "0 2vw 0 5vw",
-                    display: "flex",
-                    flexDirection: "column"
-                },
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Media.Media, {
+                between: [
+                    "zero",
+                    "mobile"
+                ],
                 children: [
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                        size: "xl",
-                        sx: {
-                            color: "black",
-                            fontSize: "10vw",
-                            marginTop: "0",
-                            padding: "5vw 5vw 2vw 5vw",
-                            fontWeight: "600",
-                            textAlign: "center"
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        style: {
+                            padding: "0 2vw 0 5vw",
+                            display: "flex",
+                            flexDirection: "column"
                         },
-                        children: "V\xedna"
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                size: "xl",
+                                sx: {
+                                    color: "black",
+                                    fontSize: "10vw",
+                                    marginTop: "0",
+                                    padding: "5vw 5vw 2vw 5vw",
+                                    fontWeight: "600",
+                                    textAlign: "center"
+                                },
+                                children: "V\xedna"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                size: "xl",
+                                sx: {
+                                    color: "black",
+                                    fontSize: "5vw",
+                                    marginTop: "0",
+                                    padding: "0 5vw 0 5vw",
+                                    fontWeight: "400"
+                                },
+                                children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                            })
+                        ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                        size: "xl",
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Grid, {
                         sx: {
-                            color: "black",
-                            fontSize: "5vw",
-                            marginTop: "0",
                             padding: "0 5vw 0 5vw",
-                            fontWeight: "400"
+                            display: "flex",
+                            flexDirection: "column",
+                            width: "100%",
+                            gap: "5vh",
+                            alignItems: "center",
+                            margin: 0,
+                            marginTop: "10vh"
                         },
-                        children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                        children: [
+                            props.vina && props.vina[0] && props.vina.map((vino)=>{
+                                return /*#__PURE__*/ jsx_runtime_.jsx("div", {
+                                    style: {
+                                        justifyContent: "center"
+                                    },
+                                    children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
+                                        shadow: "md",
+                                        sx: {
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            textAlign: "left"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Card.Section, {
+                                                children: vino.image ? /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: vino.image.sizes.medium_large,
+                                                    layout: "responsive",
+                                                    width: vino.image.sizes["medium_large-width"],
+                                                    height: vino.image.sizes["medium_large-height"]
+                                                }) : /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                    src: "/images/vinoplaceholder.svg",
+                                                    layout: "responsive",
+                                                    width: 1200,
+                                                    height: 1200
+                                                })
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Group, {
+                                                sx: {
+                                                    justifyContent: "space-between"
+                                                },
+                                                children: [
+                                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                                        weight: 700,
+                                                        size: "lg",
+                                                        children: vino.nazev
+                                                    }),
+                                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Badge, {
+                                                        children: vino.rocnik
+                                                    })
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                                children: vino.text
+                                            }),
+                                            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Text, {
+                                                weight: 600,
+                                                size: "xl",
+                                                sx: {
+                                                    position: "absolute",
+                                                    bottom: "5%"
+                                                },
+                                                children: [
+                                                    vino.cena,
+                                                    " K\u010D"
+                                                ]
+                                            }),
+                                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                href: "/sortiment/" + vino.id,
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                                    sx: {
+                                                        aspectRatio: 1,
+                                                        marginTop: "3vh",
+                                                        textAlign: "right",
+                                                        alignSelf: "flex-end"
+                                                    },
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(md_.MdArrowForwardIos, {})
+                                                })
+                                            })
+                                        ]
+                                    })
+                                });
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                href: "/sortiment",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                    color: "gray",
+                                    variant: "outline",
+                                    radius: "sm",
+                                    size: "xl",
+                                    sx: {
+                                        color: "black",
+                                        borderColor: "black",
+                                        width: "100%",
+                                        minWidth: "fit-content"
+                                    },
+                                    children: "Sortiment"
+                                })
+                            })
+                        ]
                     })
                 ]
             }),
-            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Grid, {
-                sx: {
-                    padding: "0 5vw 0 5vw",
-                    display: "flex",
-                    flexDirection: "column",
-                    width: "100%",
-                    gap: "5vh",
-                    alignItems: "center",
-                    margin: 0,
-                    marginTop: "10vh"
-                },
+            /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Media.Media, {
+                between: [
+                    "mobile",
+                    "tablet"
+                ],
                 children: [
-                    props.vina && props.vina[0] && props.vina.map((vino)=>{
-                        return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            style: {
-                                justifyContent: "center"
-                            },
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
-                                shadow: "md",
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+                        style: {
+                            padding: "0 2vw 0 5vw",
+                            display: "flex",
+                            flexDirection: "column"
+                        },
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                size: "xl",
                                 sx: {
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    textAlign: "left"
+                                    color: "black",
+                                    fontSize: "6vw",
+                                    marginTop: "0",
+                                    padding: "5vw 5vw 2vw 5vw",
+                                    fontWeight: "600",
+                                    textAlign: "center"
                                 },
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Card.Section, {
-                                        children: vino.image ? /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                            src: vino.image.sizes.medium_large,
-                                            layout: "responsive",
-                                            width: vino.image.sizes["medium_large-width"],
-                                            height: vino.image.sizes["medium_large-height"]
-                                        }) : /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
-                                            src: "/images/vinoplaceholder.svg",
-                                            layout: "responsive",
-                                            width: 1200,
-                                            height: 1200
-                                        })
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Group, {
-                                        sx: {
-                                            justifyContent: "space-between"
-                                        },
-                                        children: [
-                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                                                weight: 700,
-                                                size: "lg",
-                                                children: vino.nazev
-                                            }),
-                                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Badge, {
-                                                children: vino.rocnik
-                                            })
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                                        children: vino.text
-                                    }),
-                                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Text, {
-                                        weight: 600,
-                                        size: "xl",
-                                        sx: {
-                                            position: "absolute",
-                                            bottom: "5%"
-                                        },
-                                        children: [
-                                            vino.cena,
-                                            " K\u010D"
-                                        ]
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        href: "/sortiment/" + vino.id,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                                            sx: {
-                                                aspectRatio: 1,
-                                                marginTop: "3vh",
-                                                textAlign: "right",
-                                                alignSelf: "flex-end"
-                                            },
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(md_.MdArrowForwardIos, {})
-                                        })
-                                    })
-                                ]
+                                children: "V\xedna"
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                size: "xl",
+                                sx: {
+                                    color: "black",
+                                    fontSize: "3vw",
+                                    marginTop: "0",
+                                    padding: "0 5vw 0 5vw",
+                                    fontWeight: "400"
+                                },
+                                children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
                             })
-                        });
+                        ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                        href: "/sortiment",
-                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
-                            color: "gray",
-                            variant: "outline",
-                            radius: "sm",
-                            size: "xl",
-                            sx: {
-                                color: "black",
-                                borderColor: "black",
-                                width: "100%",
-                                minWidth: "fit-content"
-                            },
-                            children: "Sortiment"
-                        })
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Grid, {
+                        sx: {
+                            padding: "0 5vw 0 5vw",
+                            display: "flex",
+                            flexDirection: "column",
+                            width: "100%",
+                            gap: "5vh",
+                            alignItems: "center",
+                            margin: 0,
+                            marginTop: "10vh"
+                        },
+                        children: [
+                            /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid, {
+                                children: props.vinaTablet && props.vinaTablet[0] && props.vinaTablet.map((vino)=>{
+                                    return /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid.Col, {
+                                        span: 6,
+                                        sx: {
+                                            justifyContent: "center"
+                                        },
+                                        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
+                                            shadow: "md",
+                                            sx: {
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                textAlign: "left"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Card.Section, {
+                                                    children: vino.image ? /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                        src: vino.image.sizes.medium_large,
+                                                        layout: "responsive",
+                                                        width: vino.image.sizes["medium_large-width"],
+                                                        height: vino.image.sizes["medium_large-height"]
+                                                    }) : /*#__PURE__*/ jsx_runtime_.jsx((image_default()), {
+                                                        src: "/images/vinoplaceholder.svg",
+                                                        layout: "responsive",
+                                                        width: 1200,
+                                                        height: 1200
+                                                    })
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Group, {
+                                                    sx: {
+                                                        justifyContent: "space-between"
+                                                    },
+                                                    children: [
+                                                        /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                                            weight: 700,
+                                                            size: "lg",
+                                                            children: vino.nazev
+                                                        }),
+                                                        /*#__PURE__*/ jsx_runtime_.jsx(core_.Badge, {
+                                                            children: vino.rocnik
+                                                        })
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                                    children: vino.text
+                                                }),
+                                                /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Text, {
+                                                    weight: 600,
+                                                    size: "xl",
+                                                    sx: {
+                                                        position: "absolute",
+                                                        bottom: "5%"
+                                                    },
+                                                    children: [
+                                                        vino.cena,
+                                                        " K\u010D"
+                                                    ]
+                                                }),
+                                                /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                                    href: "/sortiment/" + vino.id,
+                                                    children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                                        sx: {
+                                                            aspectRatio: 1,
+                                                            marginTop: "3vh",
+                                                            textAlign: "right",
+                                                            alignSelf: "flex-end"
+                                                        },
+                                                        children: /*#__PURE__*/ jsx_runtime_.jsx(md_.MdArrowForwardIos, {})
+                                                    })
+                                                })
+                                            ]
+                                        })
+                                    });
+                                })
+                            }),
+                            /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                href: "/sortiment",
+                                children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                    color: "gray",
+                                    variant: "outline",
+                                    radius: "sm",
+                                    size: "xl",
+                                    sx: {
+                                        color: "black",
+                                        borderColor: "black",
+                                        width: "100%",
+                                        minWidth: "fit-content"
+                                    },
+                                    children: "Sortiment"
+                                })
+                            })
+                        ]
                     })
                 ]
             })
@@ -717,7 +944,7 @@ function AktualityMobile(props) {
                         size: "xl",
                         sx: {
                             color: "black",
-                            fontSize: "10vw",
+                            fontSize: "6vw",
                             marginTop: "0",
                             padding: "5vw 5vw 2vw 5vw",
                             fontWeight: "600",
@@ -729,7 +956,7 @@ function AktualityMobile(props) {
                         size: "xl",
                         sx: {
                             color: "black",
-                            fontSize: "5vw",
+                            fontSize: "3vw",
                             marginTop: "0",
                             padding: "0 5vw 0 5vw",
                             fontWeight: "400"
@@ -747,44 +974,47 @@ function AktualityMobile(props) {
                     flexDirection: "column"
                 },
                 children: [
-                    props.data && props.data.map((aktualita)=>{
-                        return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            style: {
-                                padding: "2vh 1vh 2vw 1vh"
-                            },
-                            children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
-                                shadow: "md",
+                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid, {
+                        children: props.data && props.data.map((aktualita)=>{
+                            return /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid.Col, {
+                                span: 6,
                                 sx: {
-                                    display: "flex",
-                                    flexDirection: "column",
-                                    alignItems: "flex-end",
-                                    textAlign: "left"
+                                    padding: "2vh 1vh 2vw 1vh"
                                 },
-                                children: [
-                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                                        size: "lg",
-                                        weight: 700,
-                                        sx: {
-                                            width: "100%"
-                                        },
-                                        children: aktualita.nadpis.slice(0, 30)
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
-                                        children: aktualita.text.slice(0, 150)
-                                    }),
-                                    /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
-                                        href: "/aktuality/" + aktualita.id,
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)(core_.Card, {
+                                    shadow: "md",
+                                    sx: {
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "flex-end",
+                                        textAlign: "left"
+                                    },
+                                    children: [
+                                        /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                            size: "lg",
+                                            weight: 700,
                                             sx: {
-                                                aspectRatio: 1,
-                                                marginTop: "3vh"
+                                                width: "100%"
                                             },
-                                            children: /*#__PURE__*/ jsx_runtime_.jsx(md_.MdArrowForwardIos, {})
+                                            children: aktualita.nadpis.slice(0, 30)
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
+                                            children: aktualita.text.slice(0, 150)
+                                        }),
+                                        /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
+                                            href: "/aktuality/" + aktualita.id,
+                                            children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Button, {
+                                                sx: {
+                                                    aspectRatio: 1,
+                                                    marginTop: "3vh"
+                                                },
+                                                children: /*#__PURE__*/ jsx_runtime_.jsx(md_.MdArrowForwardIos, {})
+                                            })
                                         })
-                                    })
-                                ]
-                            })
-                        });
+                                    ]
+                                })
+                            });
+                        })
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                         href: "/aktuality",
@@ -1128,7 +1358,8 @@ function Home(props) {
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).thirdSection_mobile,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(SortimentMobile, {
-                                vina: props.vina.slice(0, 2)
+                                vina: props.vina.slice(0, 2),
+                                vinaTablet: props.vina.slice(0, 4)
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {

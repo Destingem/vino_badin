@@ -18,7 +18,7 @@ console.log(props);
           size="xl"
           sx={{
             color: "black",
-            fontSize: "10vw",
+            fontSize: "6vw",
             marginTop: "0",
             padding: "5vw 5vw 2vw 5vw",
             fontWeight: "600",
@@ -31,7 +31,7 @@ console.log(props);
           size="xl"
           sx={{
             color: "black",
-              fontSize: "5vw",
+              fontSize: "3vw",
               marginTop: "0",
               padding: "0 5vw 0 5vw",
               fontWeight: "400",
@@ -49,10 +49,11 @@ console.log(props);
           flexDirection: "column",
         }}
       >
+      <Grid>
         {props.data &&
           props.data.map((aktualita) => {
             return (
-              <div style={{ padding: "2vh 1vh 2vw 1vh" }}>
+              <Grid.Col span={6} sx={{ padding: "2vh 1vh 2vw 1vh" }}>
                 <Card
                   shadow="md"
                   sx={{
@@ -73,9 +74,10 @@ console.log(props);
                   </Button>
                   </Link>
                 </Card>
-              </div>
+              </Grid.Col>
             );
           })}
+          </Grid>
         <Link href="/aktuality">
           <Button
             color="gray"
