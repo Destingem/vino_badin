@@ -70,6 +70,13 @@ export default function NavBar(props) {
                   </Link>
                 </Paper>
                 <Paper>
+                  <Link href="/galerie">
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Galerie
+                    </Text>
+                  </Link>
+                </Paper>
+                <Paper>
                   <Link href="/kontakt">
                     <Text size="xl" sx={{ fontWeight: 400 }}>
                       Kontakt
@@ -143,6 +150,13 @@ export default function NavBar(props) {
                   </Link>
                 </Paper>
                 <Paper>
+                  <Link href="/galerie">
+                    <Text size="xl" sx={{ fontWeight: 400 }}>
+                      Galerie
+                    </Text>
+                  </Link>
+                </Paper>
+                <Paper>
                   <Link href="/kontakt">
                     <Text size="xl" sx={{ fontWeight: 400 }}>
                       Kontakt
@@ -194,6 +208,9 @@ export default function NavBar(props) {
               </Link>
               <Link href="/sortiment">
                 <p>Sortiment</p>
+              </Link>
+              <Link href="/galerie">
+                <p>Galerie</p>
               </Link>
               <Link href="/kontakt">
                 <p>Kontakt</p>
