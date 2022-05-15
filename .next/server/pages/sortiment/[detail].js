@@ -571,7 +571,7 @@ function DetailLaptop(props) {
     });
 };
 async function getStaticProps(props) {
-    const res = await fetch("http://206.189.56.129/wp-json/wp/v2/sortiment");
+    const res = await fetch("http://206.189.56.129:1337/wp-json/wp/v2/sortiment");
     const posts = await res.json();
     var data = posts.filter((post)=>{
         console.log(props.params.detail);
@@ -599,7 +599,7 @@ async function getStaticProps(props) {
 }
 async function getStaticPaths() {
     // Call an external API endpoint to get posts
-    const res = await fetch("http://206.189.56.129/wp-json/wp/v2/sortiment");
+    const res = await fetch("http://206.189.56.129:1337/wp-json/wp/v2/sortiment");
     const posts = await res.json();
     // Get the paths we want to pre-render based on posts
     const paths = posts.map((post)=>({

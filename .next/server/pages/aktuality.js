@@ -545,7 +545,7 @@ function Aktuality(props) {
     });
 };
 async function getStaticProps() {
-    const res = await fetch("http://206.189.56.129/wp-json/wp/v2/aktuality");
+    const res = await fetch("http://206.189.56.129:1337/wp-json/wp/v2/aktuality");
     const posts = await res.json();
     var data = [];
     for(let aktualita in posts){

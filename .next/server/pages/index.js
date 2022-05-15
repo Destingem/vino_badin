@@ -1380,7 +1380,7 @@ function Home(props) {
     });
 };
 async function getStaticProps() {
-    const res = await fetch("http://206.189.56.129/wp-json/wp/v2/aktuality");
+    const res = await fetch("http://206.189.56.129:1337/wp-json/wp/v2/aktuality");
     const posts = await res.json();
     var aktuality = [];
     for(let aktualita in posts){
@@ -1394,7 +1394,7 @@ async function getStaticProps() {
         });
     }
     aktuality = aktuality.slice(0, 4);
-    const res_vina = await fetch("http://206.189.56.129/wp-json/wp/v2/sortiment");
+    const res_vina = await fetch("http://206.189.56.129:1337/wp-json/wp/v2/sortiment");
     const raw_vina = await res_vina.json();
     var vina = [];
     for(let vino in raw_vina){
