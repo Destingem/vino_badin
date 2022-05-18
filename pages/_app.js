@@ -4,6 +4,7 @@ import { MediaContextProvider } from './Media'
 import { useEffect, useState } from 'react';
 import "../components/forSortiment/Detail.css"
 function MyApp({ Component, pageProps }) {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED='0'
   const [showChild, setShowChild] = useState(false);
   
   useEffect(() => {
