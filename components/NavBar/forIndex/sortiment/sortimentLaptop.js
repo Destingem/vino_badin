@@ -59,7 +59,9 @@ export default function SortimentLaptop(props) {
                     <Image  src={vino.image.sizes.medium_large}
                       layout="responsive"
                       width={vino.image.sizes["medium_large-width"]}
-                      height={vino.image.sizes["medium_large-height"]}/>
+                      height={vino.image.sizes["medium_large-height"]}
+                      placeholder='blur'
+                      />
                   </Card.Section>
                   <Group sx={{justifyContent: "space-between"}}>
                     <Text weight={700} size="lg" >{vino.nazev}</Text>
