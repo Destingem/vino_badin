@@ -50,7 +50,7 @@ export default function DetailLaptop(props){
           <div style={{width: "40%"}}>
           <Carousel showArrows={true}>
          <div>
-         { props.data.hlavniObrazek ? <img src={ props.data.hlavniObrazek.sizes.medium_large}
+         { props.data.hlavniObrazek ? <Image src={ props.data.hlavniObrazek.sizes.medium_large} width={100} height={100} layout="responsive"
                    
                   /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
               height="375px"

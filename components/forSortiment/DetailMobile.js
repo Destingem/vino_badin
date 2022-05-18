@@ -1,4 +1,5 @@
 import { Breadcrumbs, Button, Spoiler, Text } from "@mantine/core";
+import Image from "next/image";
 import Link from "next/link";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
@@ -28,7 +29,7 @@ export default function DetailMobile(props){
       <div style={{}}>
         <Carousel showArrows={true}>
        <div>
-       { props.data.hlavniObrazek ? <img src={ props.data.hlavniObrazek.sizes.medium_large}
+       { props.data.hlavniObrazek ? <Image src={ props.data.hlavniObrazek.sizes.medium_large} width={100} height={100} layout="responsive"
                  
                 /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
             height="375px"
