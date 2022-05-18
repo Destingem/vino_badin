@@ -37,7 +37,10 @@ export default function Sortiment(props) {
 }
 export async function getStaticProps() {
 
-  const res_vina = await fetch("https://vinarstvibadin.cz/api/data/sortiment")
+  const res_vina = await fetch("https://vinarstvibadin.cz/api/data", {
+    method: "POST",
+    body: {url:"http://206.189.56.129:1337/wp-json/wp/v2/sortiment"}
+  })
   const raw_vina = await res_vina.json()
   var vina = []
   for(let vino in raw_vina){

@@ -66,7 +66,10 @@ export default function VinoDetail(props) {
 }
 
 export async function getStaticProps(props) {
-  const res = await fetch("https://vinarstvibadin.cz/api/data/sortiment");
+  const res = await fetch("https://vinarstvibadin.cz/api/data", {
+    method: "POST",
+    body: {url:"http://206.189.56.129:1337/wp-json/wp/v2/sortiment"}
+  });
   const posts = await res.json();
   var data = posts.filter((post) => {
     console.log(props.params.detail);
@@ -96,7 +99,10 @@ export async function getStaticProps(props) {
 
 export async function getStaticPaths() {
   // Call an external API endpoint to get posts
-  const res = await fetch("https://vinarstvibadin.cz/api/data/sortiment");
+  const res = await fetch("https://vinarstvibadin.cz/api/data", {
+    method: "POST",
+    body: {url:"http://206.189.56.129:1337/wp-json/wp/v2/sortiment"}
+  });
 
   const posts = await res.json();
   // Get the paths we want to pre-render based on posts
