@@ -60,7 +60,7 @@ export default function SortimentLaptop(props) {
                       layout="responsive"
                       width={vino.image.sizes["medium_large-width"]}
                       height={vino.image.sizes["medium_large-height"]}
-                      placeholder='blur'
+                      
                       />
                   </Card.Section>
                   <Group sx={{justifyContent: "space-between"}}>
