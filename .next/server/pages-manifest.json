@@ -1,5 +1,6 @@
 {
   "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/Media": "pages/Media.html",
@@ -7,12 +8,11 @@
   "/api/hello": "pages/api/hello.js",
   "/kontakt": "pages/kontakt.html",
   "/o-nas": "pages/o-nas.html",
-  "/_error": "pages/_error.js",
-  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
   "/galerie/[foto]": "pages/galerie/[foto].js",
   "/aktuality": "pages/aktuality.js",
   "/galerie": "pages/galerie.js",
-  "/": "pages/index.js",
   "/sortiment/[detail]": "pages/sortiment/[detail].js",
-  "/sortiment": "pages/sortiment.js"
+  "/sortiment": "pages/sortiment.js",
+  "/": "pages/index.js",
+  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js"
 }

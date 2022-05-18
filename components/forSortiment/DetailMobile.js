@@ -29,7 +29,7 @@ export default function DetailMobile(props){
       <div style={{}}>
         <Carousel showArrows={true}>
        <div>
-       { props.data.hlavniObrazek ? <Image src={ props.data.hlavniObrazek.sizes.medium_large} width={768} height={523} layout="responsive"
+       { props.data.hlavniObrazek ? <Image src={ props.data.hlavniObrazek.sizes.medium_large} width={100} height={100} layout="responsive"
                  
                 /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
             height="375px"
