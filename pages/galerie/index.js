@@ -29,7 +29,10 @@ export default function Galerie(props){
 }
 
 export async function getStaticProps() {
-    const res = await fetch("https://vinarstvibadin.cz/api/data/galerie")
+    const res = await fetch("https://vinarstvibadin.cz/api/data", {
+      method: "POST",
+      body: {url:"http://206.189.56.129:1337/wp-json/wp/v2/galerie"}
+    })
     const posts = await res.json()
     var data = []
     for (let fotografie in posts){
