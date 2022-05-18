@@ -49,7 +49,7 @@ export default function GalerieLaptop(props){
                       <Grid.Col span={4}>
                         <Link href={"/galerie/" + item.id}>
                         <Card sx={{width: "100%", height: "100%", border: "1px solid #C9C9C9", justifyContent: "center", alignItems: "center", display: "flex"}}>
-                        <img  src={item.fotografie.sizes["medium"]} height={"100%"} width={"100%"}/>
+                        <Image  src={item.fotografie.sizes["medium"]} width={100} height={100} layout="responsive"/>
                             
                             
 
