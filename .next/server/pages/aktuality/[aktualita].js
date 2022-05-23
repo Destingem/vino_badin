@@ -1,0 +1,554 @@
+"use strict";
+(() => {
+var exports = {};
+exports.id = 592;
+exports.ids = [592];
+exports.modules = {
+
+/***/ 8754:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Z": () => (/* binding */ Footer)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+
+function Footer() {
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+        style: {
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "#932525",
+            height: "8vh"
+        },
+        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+            style: {
+                color: "#c4c4c4"
+            },
+            children: "Vina\u0159stv\xed Badinovi 2022"
+        })
+    });
+};
+
+
+/***/ }),
+
+/***/ 2015:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Aktualita),
+/* harmony export */   "getStaticPaths": () => (/* binding */ getStaticPaths),
+/* harmony export */   "getStaticProps": () => (/* binding */ getStaticProps)
+/* harmony export */ });
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2247);
+/* harmony import */ var _mantine_core__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_mantine_core__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_NavBar_UI_Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8754);
+/* harmony import */ var _components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2644);
+/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6447);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1664);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(968);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+function Aktualita(props) {
+    if (!props || !props.data || !props.data[0]) {
+        return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {});
+    }
+    var data = {
+        nadpis: props.data[0].title.rendered,
+        datum: props.data[0].x_date,
+        text: props.data[0].content.rendered.replace("<p>", "").replace("</p>", "").replace(".</p>", ""),
+        image: props.data[0].acf.fotka,
+        priloha: props.data[0].acf.priloha,
+        id: props.data[0].id
+    };
+    const items = [
+        {
+            title: "Aktuality",
+            href: "/aktuality"
+        },
+        {
+            title: data.nadpis.slice(0, 30),
+            href: "#"
+        }, 
+    ].map((item, index)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+            href: item.href,
+            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Anchor, {
+                children: item.title
+            }, index)
+        })
+    );
+    console.log(props);
+    console.log(data);
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: [
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_head__WEBPACK_IMPORTED_MODULE_6___default()), {
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("title", {
+                        children: [
+                            data.nadpis,
+                            " - Aktuality | Vinar\u0161tv\xed Badinovi"
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
+                        name: "description",
+                        content: "Generated by create next app"
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
+                        rel: "icon",
+                        href: "/images/logo.png"
+                    })
+                ]
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                style: {
+                    display: "flex",
+                    flexDirection: "column",
+                    minHeight: "92vh"
+                },
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .Z, {
+                        backgroundColor: "#eeeeee"
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Media__WEBPACK_IMPORTED_MODULE_4__.Media, {
+                        between: [
+                            "zero",
+                            "mobile"
+                        ],
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                style: {
+                                    marginTop: "10vh",
+                                    justifyContent: "center",
+                                    textAlign: "center",
+                                    padding: "0 5vw 3vw 5vw"
+                                },
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            color: "black",
+                                            fontSize: data.nadpis.length < 20 ? "10vw" : "4vw",
+                                            marginTop: "0",
+                                            padding: "5vw 5vw 2vw 5vw",
+                                            fontWeight: "600",
+                                            textAlign: "center"
+                                        },
+                                        children: data.nadpis
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        weight: 600,
+                                        children: data.datum
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        sx: {
+                                            textAlign: "left"
+                                        },
+                                        children: data.text
+                                    })
+                                ]
+                            }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw",
+                                        width: "100%"
+                                    },
+                                    children: data.priloha.filename
+                                })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                href: "/aktuality",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    href: "#",
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw",
+                                        width: "100%"
+                                    },
+                                    children: "Zp\u011Bt na aktuality"
+                                })
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Media__WEBPACK_IMPORTED_MODULE_4__.Media, {
+                        between: [
+                            "mobile",
+                            "tablet"
+                        ],
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                style: {
+                                    marginTop: "10vh",
+                                    justifyContent: "center",
+                                    textAlign: "center",
+                                    padding: "0 5vw 3vw 5vw"
+                                },
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            color: "black",
+                                            fontSize: data.nadpis.length < 40 ? "10vw" : "2vw",
+                                            marginTop: "0",
+                                            padding: "5vw 5vw 2vw 5vw",
+                                            fontWeight: "600",
+                                            textAlign: "center"
+                                        },
+                                        children: data.nadpis
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        weight: 600,
+                                        children: data.datum
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        sx: {
+                                            textAlign: "left"
+                                        },
+                                        children: data.text
+                                    })
+                                ]
+                            }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: data.priloha.filename
+                                })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                href: "/aktuality",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: "Zp\u011Bt na aktuality"
+                                })
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Media__WEBPACK_IMPORTED_MODULE_4__.Media, {
+                        between: [
+                            "tablet",
+                            "tv"
+                        ],
+                        children: [
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                style: {
+                                    marginTop: "10vh",
+                                    justifyContent: "center",
+                                    textAlign: "left",
+                                    padding: "0 5vw 3vw 5vw"
+                                },
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Breadcrumbs, {
+                                        children: items
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            color: "black",
+                                            fontSize: data.nadpis.length < 20 ? "3vw" : "1vw",
+                                            marginTop: "0",
+                                            fontWeight: "600"
+                                        },
+                                        children: data.nadpis
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        weight: 600,
+                                        children: data.datum
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            textAlign: "left"
+                                        },
+                                        children: data.text
+                                    })
+                                ]
+                            }),
+                            data.priloha && /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                                download: true,
+                                href: data.priloha.url,
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: data.priloha.filename
+                                })
+                            }),
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                                href: "/aktuality",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                    href: "#",
+                                    color: "gray",
+                                    sx: {
+                                        backgroundColor: "rgb(147, 37, 37)",
+                                        margin: "0 5vw 3vw 5vw"
+                                    },
+                                    children: "Zp\u011Bt na aktuality"
+                                })
+                            })
+                        ]
+                    })
+                ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Footer__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
+        ]
+    });
+};
+async function getStaticProps(props) {
+    const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/aktuality");
+    const posts = await res.json();
+    var data = posts.filter((post)=>{
+        console.log(props.params.aktualita);
+        console.log(post.id);
+        if (props.params.aktualita == post.id) {
+            return post;
+        }
+    });
+    console.log(data);
+    if (!data || data.length == 0 || !data[0]) {
+        return {
+            notFound: true
+        };
+    }
+    console.log(props);
+    return {
+        props: {
+            data
+        },
+        // Next.js will attempt to re-generate the page:
+        // - When a request comes in
+        // - At most once every 10 seconds
+        revalidate: 10
+    };
+}
+async function getStaticPaths() {
+    // Call an external API endpoint to get posts
+    const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/aktuality");
+    const posts = await res.json();
+    // Get the paths we want to pre-render based on posts
+    const paths = posts.map((post)=>({
+            params: {
+                aktualita: post.id + ""
+            }
+        })
+    );
+    // We'll pre-render only these paths at build time.
+    // { fallback: false } means other routes should 404.
+    return {
+        paths,
+        fallback: true
+    };
+}
+
+
+/***/ }),
+
+/***/ 8839:
+/***/ ((module) => {
+
+module.exports = require("@artsy/fresnel");
+
+/***/ }),
+
+/***/ 2247:
+/***/ ((module) => {
+
+module.exports = require("@mantine/core");
+
+/***/ }),
+
+/***/ 2796:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head-manager-context.js");
+
+/***/ }),
+
+/***/ 4957:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/head.js");
+
+/***/ }),
+
+/***/ 4014:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/i18n/normalize-locale-path.js");
+
+/***/ }),
+
+/***/ 744:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config-context.js");
+
+/***/ }),
+
+/***/ 5843:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/image-config.js");
+
+/***/ }),
+
+/***/ 8524:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/is-plain-object.js");
+
+/***/ }),
+
+/***/ 8020:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/mitt.js");
+
+/***/ }),
+
+/***/ 4406:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/page-path/denormalize-page-path.js");
+
+/***/ }),
+
+/***/ 4964:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router-context.js");
+
+/***/ }),
+
+/***/ 3938:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/format-url.js");
+
+/***/ }),
+
+/***/ 9565:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/get-asset-path-from-route.js");
+
+/***/ }),
+
+/***/ 4365:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/get-middleware-regex.js");
+
+/***/ }),
+
+/***/ 1428:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/is-dynamic.js");
+
+/***/ }),
+
+/***/ 1292:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/parse-relative-url.js");
+
+/***/ }),
+
+/***/ 979:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/querystring.js");
+
+/***/ }),
+
+/***/ 6052:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/resolve-rewrites.js");
+
+/***/ }),
+
+/***/ 4226:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/route-matcher.js");
+
+/***/ }),
+
+/***/ 5052:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/router/utils/route-regex.js");
+
+/***/ }),
+
+/***/ 9232:
+/***/ ((module) => {
+
+module.exports = require("next/dist/shared/lib/utils.js");
+
+/***/ }),
+
+/***/ 968:
+/***/ ((module) => {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ 6689:
+/***/ ((module) => {
+
+module.exports = require("react");
+
+/***/ }),
+
+/***/ 997:
+/***/ ((module) => {
+
+module.exports = require("react/jsx-runtime");
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,644], () => (__webpack_exec__(2015)));
+module.exports = __webpack_exports__;
+
+})();
