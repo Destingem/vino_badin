@@ -15,3 +15,7 @@ a {
 * {
   box-sizing: border-box;
 }
+.thumb > img{
+  height: 70px;
+  aspect-ratio: 1;
+}

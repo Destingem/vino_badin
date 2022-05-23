@@ -50,28 +50,31 @@ export default function DetailLaptop(props){
           <div style={{width: "40%"}}>
           <Carousel showArrows={true}>
          <div>
-         { props.data.hlavniObrazek ? <Image src={ props.data.hlavniObrazek.sizes.medium_large} width={props.data.hlavniObrazek.sizes["medium_large-width"]} height={props.data.hlavniObrazek.sizes["medium_large-height"]} layout="responsive"
+         { props.data.hlavniObrazek ? <img src={ props.data.hlavniObrazek.sizes.medium_large} width={props.data.hlavniObrazek.sizes["medium_large-width"]} height={props.data.hlavniObrazek.sizes["medium_large-height"]}
                    
                   /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
               height="375px"
                   />}
          </div>
          <div>
-         {props.data.obrazek2 && <img src={ props.data.obrazek2.sizes.medium_large}
-            
-                   />}
-         </div>
-         <div>
-         {props.data.obrazek3 && <img src={ props.data.obrazek3.sizes.medium_large}
-                   />}
-         </div>
-         <div>
-         {props.data.obrazek4 && <img src={ props.data.obrazek4.sizes.medium_large}
+         {props.data.obrazek2 ? <img src={ props.data.obrazek2.sizes.medium_large} /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
+              height="375px"
                   />}
          </div>
          <div>
-         {props.data.obrazek5 && <img src={ props.data.obrazek5.sizes.medium_large}
-                 />}
+         {props.data.obrazek3 ? <img src={ props.data.obrazek3.sizes.medium_large} /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
+              height="375px"
+                  />}
+         </div>
+         <div>
+         {props.data.obrazek4 ? <img src={ props.data.obrazek4.sizes.medium_large} /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
+              height="375px"
+                  />}
+         </div>
+         <div>
+         {props.data.obrazek5 ? <img src={ props.data.obrazek5.sizes.medium_large} /> : <img  src="/images/vinoplaceholder.svg"   width="546px"
+              height="375px"
+                  />}
          </div>
           </Carousel>
           </div>
