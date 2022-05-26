@@ -31,7 +31,7 @@ console.log(props);
           size="xl"
           sx={{
             color: "black",
-              fontSize: "5vw",
+              fontSize: "3vw",
               marginTop: "0",
               padding: "0 5vw 0 5vw",
               fontWeight: "400",
