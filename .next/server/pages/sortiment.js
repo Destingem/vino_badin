@@ -5,36 +5,6 @@ exports.id = 205;
 exports.ids = [205];
 exports.modules = {
 
-/***/ 8754:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (/* binding */ Footer)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-function Footer() {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-        style: {
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            backgroundColor: "#932525",
-            height: "8vh"
-        },
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-            style: {
-                color: "#c4c4c4"
-            },
-            children: "Vina\u0159stv\xed Badinovi 2022"
-        })
-    });
-};
-
-
-/***/ }),
-
 /***/ 4397:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -769,7 +739,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,644], () => (__webpack_exec__(4397)));
+var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,718], () => (__webpack_exec__(4397)));
 module.exports = __webpack_exports__;
 
 })();

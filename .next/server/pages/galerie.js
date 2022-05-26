@@ -24,12 +24,19 @@ var head_ = __webpack_require__(968);
 var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 // EXTERNAL MODULE: external "@mantine/core"
 var core_ = __webpack_require__(2247);
+// EXTERNAL MODULE: ./node_modules/next/image.js
+var next_image = __webpack_require__(5675);
+var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 // EXTERNAL MODULE: ./node_modules/next/link.js
 var next_link = __webpack_require__(1664);
 var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
+// EXTERNAL MODULE: ./components/NavBar/UI/Footer.js
+var Footer = __webpack_require__(8754);
 // EXTERNAL MODULE: ./components/NavBar/UI/Navbar.js
 var Navbar = __webpack_require__(2644);
 ;// CONCATENATED MODULE: ./components/forGalerie/GalerieLaptop.js
+
+
 
 
 
@@ -66,7 +73,7 @@ function GalerieLaptop(props) {
                                 fontSize: "6rem",
                                 textAlign: "center"
                             },
-                            children: "Aktuality"
+                            children: "Galerie"
                         })
                     })
                 ]
@@ -82,22 +89,22 @@ function GalerieLaptop(props) {
                 children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid, {
                     children: props.data && props.data[0] && props.data.map((item)=>{
                         return /*#__PURE__*/ jsx_runtime_.jsx(core_.Grid.Col, {
-                            span: 4,
+                            span: 3,
                             children: /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/galerie/" + item.id,
                                 children: /*#__PURE__*/ jsx_runtime_.jsx(core_.Card, {
                                     sx: {
-                                        width: "100%",
+                                        width: "fit-content",
                                         height: "100%",
                                         border: "1px solid #C9C9C9",
                                         justifyContent: "center",
                                         alignItems: "center",
-                                        display: "flex"
+                                        display: "flex",
+                                        padding: "0 !important",
+                                        aspectRatio: 1
                                     },
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx(Image, {
+                                    children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
                                         src: item.fotografie.sizes["medium"],
-                                        width: 100,
-                                        height: 100,
                                         layout: "responsive"
                                     })
                                 })
@@ -105,14 +112,12 @@ function GalerieLaptop(props) {
                         });
                     })
                 })
-            })
+            }),
+            /*#__PURE__*/ jsx_runtime_.jsx(Footer/* default */.Z, {})
         ]
     });
 };
 
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(5675);
-var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 ;// CONCATENATED MODULE: ./components/forGalerie/GalerieMobile.js
 
 
@@ -155,7 +160,7 @@ function GalerieMobile(props) {
                                 fontSize: "13vw",
                                 textAlign: "center"
                             },
-                            children: "Aktuality"
+                            children: "Galerie"
                         })
                     })
                 ]
@@ -237,7 +242,7 @@ function GalerieTablet(props) {
                                 fontSize: "13vw",
                                 textAlign: "center"
                             },
-                            children: "Aktuality"
+                            children: "Galerie"
                         })
                     })
                 ]
@@ -541,7 +546,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,644], () => (__webpack_exec__(6956)));
+var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,718], () => (__webpack_exec__(6956)));
 module.exports = __webpack_exports__;
 
 })();

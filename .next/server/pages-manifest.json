@@ -1,19 +1,19 @@
 {
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/404": "pages/404.html",
   "/Media": "pages/Media.html",
   "/api/data": "pages/api/data.js",
-  "/api/hello": "pages/api/hello.js",
   "/api/photo": "pages/api/photo.js",
-  "/kontakt": "pages/kontakt.html",
+  "/api/hello": "pages/api/hello.js",
   "/o-nas": "pages/o-nas.html",
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
+  "/aktuality": "pages/aktuality.js",
   "/": "pages/index.js",
-  "/galerie": "pages/galerie.js",
+  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
+  "/kontakt": "pages/kontakt.js",
   "/sortiment": "pages/sortiment.js",
   "/sortiment/[detail]": "pages/sortiment/[detail].js",
-  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
   "/galerie/[foto]": "pages/galerie/[foto].js",
-  "/aktuality": "pages/aktuality.js"
+  "/galerie": "pages/galerie.js"
 }

@@ -69,7 +69,7 @@ var link_default = /*#__PURE__*/__webpack_require__.n(next_link);
 
 
 
-function OnasLaptop() {
+function OnasLaptop(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
@@ -106,7 +106,7 @@ function OnasLaptop() {
                                     padding: "0 0 2vw 0",
                                     fontWeight: "400"
                                 },
-                                children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                                children: props.text
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/o-nas",
@@ -179,7 +179,7 @@ function SortimentLaptop(props) {
                             padding: "0 0 2vw 0",
                             fontWeight: "400"
                         },
-                        children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                        children: props.text
                     })
                 ]
             }),
@@ -314,7 +314,7 @@ function AktualityLaptop(props) {
                             padding: "0 0 2vw 0",
                             fontWeight: "400"
                         },
-                        children: "Aktuality z na\u0161eho vina\u0159stv\xed"
+                        children: props.text
                     })
                 ]
             }),
@@ -398,7 +398,7 @@ function AktualityLaptop(props) {
 
 
 
-function KdeLaptop() {
+function KdeLaptop(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(core_.Text, {
@@ -435,7 +435,7 @@ function KdeLaptop() {
                                     padding: "0 0 2vw 0",
                                     fontWeight: "400"
                                 },
-                                children: "V\xedno prod\xe1v\xe1me ve vlastn\xedm sklep\u011B v Moravsk\xfdch Br\xe1nic\xedch od roku 2008. V roce 2020 jsme sklep rekonstruovali. V nab\xeddce m\xe1me prodej v\xedn v lahv\xedch, v bag in boxech a st\xe1\u010Den\xfdch do PET lahv\xed."
+                                children: props.text
                             }),
                             /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                 href: "/kontakt",
@@ -485,7 +485,7 @@ function KdeLaptop() {
 
 
 
-function OnasMobile() {
+function OnasMobile(props) {
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)(Media.Media, {
@@ -528,7 +528,7 @@ function OnasMobile() {
                                         padding: "0 0 2vw 0",
                                         fontWeight: "400"
                                     },
-                                    children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                                    children: props.text
                                 }),
                                 /*#__PURE__*/ jsx_runtime_.jsx((link_default()), {
                                     href: "/o-nas",
@@ -666,7 +666,7 @@ function SortimentMobile(props) {
                                     padding: "0 5vw 0 5vw",
                                     fontWeight: "400"
                                 },
-                                children: "Mal\xe9 rodinn\xe9 vina\u0159stv\xed Badinovi bylo zalo\u017Eeno v roce 1992. Nav\xe1zali jsme na zku\u0161enosti na\u0161ich rodi\u010D\u016F a prarodi\u010D\u016F, kte\u0159\xed se v\u011Bnovali v\xednu ji\u017E od roku 1960. Sna\u017E\xedme se o produkci v\xedn z hrozn\u016F vyp\u011Bstovan\xfdch p\u0159ev\xe1\u017En\u011B ve vlastn\xedch vinic\xedch."
+                                children: props.text
                             })
                         ]
                     }),
@@ -961,7 +961,7 @@ function AktualityMobile(props) {
                             padding: "0 5vw 0 5vw",
                             fontWeight: "400"
                         },
-                        children: "Aktuality z na\u0161eho vina\u0159stv\xed"
+                        children: props.text
                     })
                 ]
             }),
@@ -1077,6 +1077,7 @@ const router_namespaceObject = require("next/router");
 
 
 function Home(props) {
+    console.log(props);
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
             /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
@@ -1164,23 +1165,29 @@ function Home(props) {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).secondSection_laptop,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(OnasLaptop, {})
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(OnasLaptop, {
+                                text: props.texty.o_nas
+                            })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).thirdSection_laptop,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(SortimentLaptop, {
-                                vina: props.vina.slice(0, 4)
+                                vina: props.vina.slice(0, 4),
+                                text: props.texty.vina
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).fourthSection_laptop,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(AktualityLaptop, {
-                                data: props.aktuality
+                                data: props.aktuality,
+                                text: props.texty.aktuality
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).fifthSection_laptop,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(KdeLaptop, {})
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(KdeLaptop, {
+                                text: props.texty.kde
+                            })
                         })
                     ]
                 })
@@ -1353,24 +1360,30 @@ function Home(props) {
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).secondSection_mobile,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(OnasMobile, {})
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(OnasMobile, {
+                                text: props.texty.o_nas
+                            })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).thirdSection_mobile,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(SortimentMobile, {
                                 vina: props.vina.slice(0, 2),
-                                vinaTablet: props.vina.slice(0, 4)
+                                vinaTablet: props.vina.slice(0, 4),
+                                text: props.texty.vina
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).fourthSection_mobile,
                             children: /*#__PURE__*/ jsx_runtime_.jsx(AktualityMobile, {
-                                data: props.aktuality
+                                data: props.aktuality,
+                                text: props.texty.aktuality
                             })
                         }),
                         /*#__PURE__*/ jsx_runtime_.jsx("section", {
                             className: (index_module_default()).fifthSection_mobile,
-                            children: /*#__PURE__*/ jsx_runtime_.jsx(KdeMobile/* default */.Z, {})
+                            children: /*#__PURE__*/ jsx_runtime_.jsx(KdeMobile/* default */.Z, {
+                                text: props.texty.kde
+                            })
                         })
                     ]
                 })
@@ -1410,10 +1423,46 @@ async function getStaticProps() {
         }
     }
     ;
+    const res_texty = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/text");
+    const raw_texty = await res_texty.json();
+    var texty = {};
+    for(let text in raw_texty){
+        let thisText = raw_texty[text];
+        if (!thisText || !thisText.acf || !thisText.acf.stranka || thisText.acf.stranka !== "hlavni_strana") {}
+        switch(thisText.slug){
+            case "kde-nas-najdete":
+                texty = {
+                    ...texty,
+                    kde: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")
+                };
+                break;
+            case "aktuality":
+                texty = {
+                    ...texty,
+                    aktuality: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")
+                };
+                break;
+            case "vina":
+                texty = {
+                    ...texty,
+                    vina: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")
+                };
+                break;
+            case "o-nas":
+                texty = {
+                    ...texty,
+                    o_nas: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")
+                };
+                break;
+            default:
+                break;
+        }
+    }
     return {
         props: {
             aktuality,
-            vina
+            vina,
+            texty
         },
         // Next.js will attempt to re-generate the page:
         // - When a request comes in
@@ -1623,6 +1672,14 @@ module.exports = require("react-icons/md");
 "use strict";
 module.exports = require("react/jsx-runtime");
 
+/***/ }),
+
+/***/ 4007:
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("typescript");
+
 /***/ })
 
 };
@@ -1632,7 +1689,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,644,821], () => (__webpack_exec__(7400)));
+var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,718,725], () => (__webpack_exec__(7400)));
 module.exports = __webpack_exports__;
 
 })();

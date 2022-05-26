@@ -22,8 +22,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2644);
-/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6447);
+/* harmony import */ var _components_NavBar_UI_Footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8754);
+/* harmony import */ var _components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2644);
+/* harmony import */ var _Media__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(6447);
+
 
 
 
@@ -35,7 +37,7 @@ function FotoDetail(props) {
     console.log(props.data[0].acf.fotografie.sizes);
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Media__WEBPACK_IMPORTED_MODULE_5__.Media, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Media__WEBPACK_IMPORTED_MODULE_6__.Media, {
                 between: [
                     "zero",
                     "mobile"
@@ -46,7 +48,7 @@ function FotoDetail(props) {
                         flexDirection: "row"
                     },
                     children: [
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {}),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {}),
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                             style: {
                                 marginTop: "10vh",
@@ -77,31 +79,123 @@ function FotoDetail(props) {
                     ]
                 })
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Media__WEBPACK_IMPORTED_MODULE_5__.Media, {
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Media__WEBPACK_IMPORTED_MODULE_6__.Media, {
                 between: [
                     "mobile",
                     "tablet"
                 ],
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     style: {
                         display: "flex",
                         flexDirection: "row"
                     },
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
+                    children: [
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {}),
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                            style: {
+                                marginTop: "10vh",
+                                textAlign: "center",
+                                alignItems: "center",
+                                width: "100%"
+                            },
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                    src: props.data[0].acf.fotografie.sizes.large,
+                                    width: props.data[0].acf.fotografie.sizes["large-width"],
+                                    height: props.data[0].acf.fotografie.sizes["large-height"]
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                    children: props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                    children: props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                    href: "/galerie",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                        children: "Zp\u011Bt na Galerii"
+                                    })
+                                })
+                            ]
+                        })
+                    ]
                 })
             }),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_Media__WEBPACK_IMPORTED_MODULE_5__.Media, {
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_Media__WEBPACK_IMPORTED_MODULE_6__.Media, {
                 between: [
                     "tablet",
                     "tv"
                 ],
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    style: {
-                        display: "flex",
-                        flexDirection: "row"
-                    },
-                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
-                })
+                children: [
+                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                        style: {
+                            display: "flex",
+                            flexDirection: "row"
+                        },
+                        children: [
+                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Navbar__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .Z, {}),
+                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                style: {
+                                    marginTop: "10vh",
+                                    textAlign: "center",
+                                    alignItems: "center",
+                                    width: "100%"
+                                },
+                                children: [
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        size: "xl",
+                                        sx: {
+                                            color: "rgb(147, 37, 37)",
+                                            fontWeight: 600,
+                                            fontSize: "3rem"
+                                        },
+                                        children: props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Text, {
+                                        children: props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")
+                                    }),
+                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_2___default()), {
+                                        src: props.data[0].acf.fotografie.sizes.large,
+                                        width: props.data[0].acf.fotografie.sizes["large-width"],
+                                        height: props.data[0].acf.fotografie.sizes["large-height"]
+                                    }),
+                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                                        style: {
+                                            display: "flex",
+                                            flexDirection: "row",
+                                            textAlign: "center",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            gap: "5%",
+                                            marginBottom: "5vh"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                                href: props.data[0].acf.fotografie.sizes.large,
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                                    sx: {
+                                                        backgroundColor: "rgb(147, 37, 37)"
+                                                    },
+                                                    children: "St\xe1hnout"
+                                                })
+                                            }),
+                                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_3___default()), {
+                                                href: "/galerie",
+                                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_mantine_core__WEBPACK_IMPORTED_MODULE_1__.Button, {
+                                                    sx: {
+                                                        backgroundColor: "rgb(147, 37, 37)"
+                                                    },
+                                                    children: "Zp\u011Bt na Galerii"
+                                                })
+                                            })
+                                        ]
+                                    })
+                                ]
+                            })
+                        ]
+                    }),
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_components_NavBar_UI_Footer__WEBPACK_IMPORTED_MODULE_4__/* ["default"] */ .Z, {})
+                ]
             })
         ]
     });
@@ -322,7 +416,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,644], () => (__webpack_exec__(366)));
+var __webpack_exports__ = __webpack_require__.X(0, [505,884,61,718], () => (__webpack_exec__(366)));
 module.exports = __webpack_exports__;
 
 })();
