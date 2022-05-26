@@ -184,6 +184,7 @@ export default function NavBar(props) {
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
+                  cursor: "pointer"
                 }}
               >
                 <Image src="/images/logo.png" width={49} height={44} />

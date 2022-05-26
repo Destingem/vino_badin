@@ -32,7 +32,7 @@ export default function GalerieTablet(props){
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >
-                Aktuality
+                Galerie
               </Text>
             </div>
           </section>

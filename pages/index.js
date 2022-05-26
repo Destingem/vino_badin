@@ -19,7 +19,7 @@ import { useState } from "react";
 import Loader from "../components/Loader";
 import Router from "next/router"
 export default function Home(props) {
- 
+ console.log(props);
   return (
     <>
       <Head>
@@ -82,16 +82,16 @@ export default function Home(props) {
             </div>
           </section>
           <section className={styles.secondSection_laptop}>
-           <OnasLaptop />
+           <OnasLaptop text={props.texty.o_nas}/>
           </section>
           <section className={styles.thirdSection_laptop}>
-            <SortimentLaptop vina={props.vina.slice(0, 4)} />
+            <SortimentLaptop vina={props.vina.slice(0, 4)} text={props.texty.vina}/>
           </section>
           <section className={styles.fourthSection_laptop}>
-            <AktualityLaptop data={props.aktuality} />
+            <AktualityLaptop data={props.aktuality} text={props.texty.aktuality}/>
           </section>
           <section className={styles.fifthSection_laptop}>
-            <KdeLaptop />
+            <KdeLaptop text={props.texty.kde}/>
           </section>
         </div>
       </Media>
@@ -217,16 +217,16 @@ export default function Home(props) {
             </Media>
           </section>
           <section className={styles.secondSection_mobile}>
-           <OnasMobile />
+           <OnasMobile text={props.texty.o_nas} />
           </section>
           <section className={styles.thirdSection_mobile}>
-           <SortimentMobile vina={props.vina.slice(0, 2)} vinaTablet={props.vina.slice(0, 4)}/>
+           <SortimentMobile vina={props.vina.slice(0, 2)} vinaTablet={props.vina.slice(0, 4)} text={props.texty.vina}/>
           </section>
           <section className={styles.fourthSection_mobile}>
-            <AktualityMobile data={props.aktuality}/>
+            <AktualityMobile data={props.aktuality} text={props.texty.aktuality}/>
           </section>
           <section className={styles.fifthSection_mobile}>
-            <KdeMobile />
+            <KdeMobile text={props.texty.kde}/>
           </section>
         </div>
       </Media>
@@ -253,10 +253,38 @@ export async function getStaticProps() {
     }
   }
  ;
+ const res_texty = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/text")
+ const raw_texty = await res_texty.json()
+ var texty = {}
+ for( let text in raw_texty){
+   let thisText = raw_texty[text]
+   if (!thisText || !thisText.acf || !thisText.acf.stranka || thisText.acf.stranka !== "hlavni_strana") {
+    
+   } 
+   switch (thisText.slug) {
+     case "kde-nas-najdete":
+       texty = {...texty, kde: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+       break;
+    case "aktuality":
+      texty = {...texty, aktuality: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+        break;
+    case "vina":
+      texty = {...texty, vina: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+       break;
+    case "o-nas":
+      texty = {...texty, o_nas: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+       break;
+    
+     default:
+       
+       break;
+   }
+ }
   return {
     props: {
      aktuality,
      vina,
+     texty,
     },
     // Next.js will attempt to re-generate the page:
     // - When a request comes in

@@ -6,7 +6,7 @@ import { Media } from "../Media";
 import styles from "./kontakt.module.css";
 import {BsPersonCircle} from "react-icons/bs"
 import {FaMapMarker} from "react-icons/fa"
-export default function Kontakt() {
+export default function Kontakt(props) {
   return (
     <>
       <Media between={["zero", "mobile"]}>
@@ -130,29 +130,27 @@ export default function Kontakt() {
         <div style={{display: "flex"}}>
         <section className={styles.section_3_tablet}>
            <Text size="xl"  weight={600} sx={{fontSize: "8vw", whiteSpace: "nowrap" }}>Vinařství Badin</Text>
-           <div className={styles.textWithIcon}>
+           {props.texty.osoba && <div className={styles.textWithIcon}>
            <BsPersonCircle style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">František Badin</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.osoba}</Text>
+           </div>}
+           {props.texty.adresa && <div className={styles.textWithIcon}>
            <FaMapMarker style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">Moravské Bránice č.p. 383</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.adresa}</Text>
+           </div>}
+           {props.texty.ic && <div className={styles.textWithIcon}>
            <MdAccountTree style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">IČ: 46912126</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.ic}</Text>
+           </div>}
+           {props.texty.email && <div className={styles.textWithIcon}>
            <MdAlternateEmail style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">info@vinarstvibadin.cz</Text>
-           </div>
+           <Text size="xl">{props.texty.email}</Text>
+           </div>}
           </section>
           <section className={styles.section_2_tablet}>
             
             <Text>
-            Víno prodáváme ve vlastním sklepě v Moravských Bránicích od roku
-            2008. V roce 2020 jsme sklep rekonstruovali. V nabídce máme prodej
-            vín v lahvích, v bag in boxech a stáčených do PET lahví.
+            {props.texty.text}
             </Text>
             
           </section>
@@ -212,29 +210,27 @@ export default function Kontakt() {
           <div style={{display: "flex"}}>
           <section className={styles.section_3_laptop}>
            <Text size="xl"  weight={600} sx={{fontSize: "4.125vw"}}>Vinařství Badin</Text>
-           <div className={styles.textWithIcon}>
+           { props.texty.osoba &&<div className={styles.textWithIcon}>
            <BsPersonCircle style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">František Badin</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.osoba}</Text>
+           </div>}
+           {props.texty.adresa && <div className={styles.textWithIcon}>
            <FaMapMarker style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">Moravské Bránice č.p. 383</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.adresa}</Text>
+           </div>}
+           {props.texty.ic && <div className={styles.textWithIcon}>
            <MdAccountTree style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">IČ: 46912126</Text>
-           </div>
-           <div className={styles.textWithIcon}>
+           <Text size="xl">{props.texty.ic}</Text>
+           </div>}
+           {props.texty.email && <div className={styles.textWithIcon}>
            <MdAlternateEmail style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">info@vinarstvibadin.cz</Text>
-           </div>
+           <Text size="xl">{props.texty.email}</Text>
+           </div>}
           </section>
           <section className={styles.section_2_laptop}>
             
             <Text>
-            Víno prodáváme ve vlastním sklepě v Moravských Bránicích od roku
-            2008. V roce 2020 jsme sklep rekonstruovali. V nabídce máme prodej
-            vín v lahvích, v bag in boxech a stáčených do PET lahví.
+            {props.texty.text}
             </Text>
             
           </section>
@@ -260,3 +256,45 @@ export default function Kontakt() {
   );
 }
 // <section className={styles.section}></section>
+export async function getStaticProps(){
+  const res_texty = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/text")
+  const raw_texty = await res_texty.json()
+  var texty = {}
+  for( let text in raw_texty){
+    let thisText = raw_texty[text]
+    if (!thisText || !thisText.acf || !thisText.acf.stranka || thisText.acf.stranka !== "kontakt") {
+     
+    } 
+    switch (thisText.slug) {
+      case "email":
+        texty = {...texty, email: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+        break;
+     case "ic":
+       texty = {...texty, ic: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+         break;
+     case "adresa":
+       texty = {...texty, adresa: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+        break;
+     case "kontaktni-osoba":
+       texty = {...texty, osoba: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+        break;
+        case "kontakt-text":
+          texty = {...texty, text: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+           break;
+     
+      default:
+        
+        break;
+    }
+  }
+  return {
+    props: {
+    
+     texty,
+    },
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 seconds
+    revalidate: 60, // In seconds
+  }
+}

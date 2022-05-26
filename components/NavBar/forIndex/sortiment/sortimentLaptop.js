@@ -36,10 +36,7 @@ export default function SortimentLaptop(props) {
             fontWeight: "400",
           }}
         >
-          Malé rodinné vinařství Badinovi bylo založeno v roce 1992. Navázali
-          jsme na zkušenosti našich rodičů a prarodičů, kteří se věnovali vínu
-          již od roku 1960. Snažíme se o produkci vín z hroznů vypěstovaných
-          převážně ve vlastních vinicích.
+          {props.text}
         </Text>
       </div>
       <Grid

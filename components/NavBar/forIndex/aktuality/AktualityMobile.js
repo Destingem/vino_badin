@@ -31,13 +31,13 @@ console.log(props);
           size="xl"
           sx={{
             color: "black",
-              fontSize: "3vw",
+              fontSize: "5vw",
               marginTop: "0",
               padding: "0 5vw 0 5vw",
               fontWeight: "400",
           }}
         >
-          Aktuality z našeho vinařství
+          {props.text}
         </Text>
       </div>
       <div

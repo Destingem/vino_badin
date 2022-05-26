@@ -35,7 +35,7 @@ export default function AktualityLaptop(props) {
             fontWeight: "400",
           }}
         >
-          Aktuality z našeho vinařství
+         {props.text}
         </Text>
       </div>
       <Grid

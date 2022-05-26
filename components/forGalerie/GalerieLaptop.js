@@ -1,5 +1,7 @@
 import { Card, Grid, Text } from "@mantine/core";
+import Image from "next/image";
 import Link from "next/link";
+import Footer from "../NavBar/UI/Footer";
 import NavBar from "../NavBar/UI/Navbar";
 
 
@@ -32,7 +34,7 @@ export default function GalerieLaptop(props){
                 size="xl"
                 sx={{ color: "white", fontSize: "6rem", textAlign: "center" }}
               >
-                Aktuality
+                Galerie
               </Text>
             </div>
           </section>
@@ -46,14 +48,11 @@ export default function GalerieLaptop(props){
           <Grid>
               {props.data && props.data[0] && props.data.map(item => {
                   return(
-                      <Grid.Col span={4}>
+                      <Grid.Col span={3}>
                         <Link href={"/galerie/" + item.id}>
-                        <Card sx={{width: "100%", height: "100%", border: "1px solid #C9C9C9", justifyContent: "center", alignItems: "center", display: "flex"}}>
-                        <Image  src={item.fotografie.sizes["medium"]} width={100} height={100} layout="responsive"/>
-                            
-                            
-
-                          
+                        <Card sx={{width: "fit-content", height: "100%", border: "1px solid #C9C9C9", justifyContent: "center", alignItems: "center", display: "flex", padding: "0 !important", aspectRatio: 1}}>
+                        <img  src={item.fotografie.sizes["medium"]}  layout="responsive" />
+                      
                         </Card>
                         </Link>
                       </Grid.Col>
@@ -61,6 +60,7 @@ export default function GalerieLaptop(props){
               })}
               </Grid>
           </section>
+          <Footer />
         </>
     )
 }

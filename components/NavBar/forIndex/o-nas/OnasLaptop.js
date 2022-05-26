@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Button, Text } from "@mantine/core"
 import Image from "next/image"
 import { Loader } from "@mantine/core"
-export default function OnasLaptop(){
+export default function OnasLaptop(props){
 
     return(
        <>
@@ -37,10 +37,7 @@ export default function OnasLaptop(){
               fontWeight: "400",
             }}
           >
-            Malé rodinné vinařství Badinovi bylo založeno v roce 1992.
-            Navázali jsme na zkušenosti našich rodičů a prarodičů, kteří
-            se věnovali vínu již od roku 1960. Snažíme se o produkci vín z
-            hroznů vypěstovaných převážně ve vlastních vinicích.
+           {props.text}
           </Text>
           <Link href="/o-nas">
           <Button

@@ -1,6 +1,7 @@
 import { Button, Text } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../../components/NavBar/UI/Footer";
 import NavBar from "../../components/NavBar/UI/Navbar";
 import { Media } from "../Media";
 
@@ -24,12 +25,31 @@ console.log(props.data[0].acf.fotografie.sizes);
     <Media between={["mobile", "tablet"]}>
     <div style={{display: "flex", flexDirection: "row"}}>
             <NavBar />
+            <div style={{marginTop: "10vh", textAlign: "center", alignItems: "center", width: "100%"}}>
+                
+                <Image src={props.data[0].acf.fotografie.sizes.large} width={props.data[0].acf.fotografie.sizes["large-width"]} height={props.data[0].acf.fotografie.sizes["large-height"]}></Image>
+                <Text>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+                <Text>{props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+                <Link href="/galerie"><Button>Zpět na Galerii</Button></Link>
+            </div>
         </div>
     </Media>
     <Media between={["tablet", "tv"]}>
     <div style={{display: "flex", flexDirection: "row"}}>
             <NavBar />
+            <div style={{marginTop: "10vh", textAlign: "center", alignItems: "center", width: "100%"}}>
+            <Text size="xl" sx={{color: "rgb(147, 37, 37)", fontWeight: 600, fontSize: "3rem"}}>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+            <Text>{props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+                <Image src={props.data[0].acf.fotografie.sizes.large} width={props.data[0].acf.fotografie.sizes["large-width"]} height={props.data[0].acf.fotografie.sizes["large-height"]}></Image>
+                
+                <div style={{display: "flex", flexDirection: "row", textAlign: "center", alignItems: "center", justifyContent: "center", gap: "5%", marginBottom: "5vh"}}>
+                
+                <Link href={props.data[0].acf.fotografie.sizes.large}><Button sx={{backgroundColor: "rgb(147, 37, 37)"}}>Stáhnout</Button></Link>
+                <Link href="/galerie"><Button sx={{backgroundColor: "rgb(147, 37, 37)"}}>Zpět na Galerii</Button></Link>
+                </div>
+            </div>
         </div>
+        <Footer />
     </Media>
 </>
     )

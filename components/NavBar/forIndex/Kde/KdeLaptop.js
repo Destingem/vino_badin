@@ -1,7 +1,7 @@
 import { Text, Button } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
-export default function KdeLaptop() {
+export default function KdeLaptop(props) {
   return (
     <>
       <Text
@@ -35,9 +35,7 @@ export default function KdeLaptop() {
               fontWeight: "400",
             }}
           >
-            Víno prodáváme ve vlastním sklepě v Moravských Bránicích od roku
-            2008. V roce 2020 jsme sklep rekonstruovali. V nabídce máme prodej
-            vín v lahvích, v bag in boxech a stáčených do PET lahví.
+            {props.text}
           </Text>
           <Link href="/kontakt">
             <Button
