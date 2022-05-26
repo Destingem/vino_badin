@@ -1,7 +1,6 @@
 import { Text, Button } from "@mantine/core";
 import Image from "next/image";
 import Link from "next/link";
-import { isPropertySignature } from "typescript";
 export default function KdeMobile(props) {
   console.log(window.innerHeight);
   console.log(window.innerWidth);
