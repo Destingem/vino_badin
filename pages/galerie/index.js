@@ -29,7 +29,7 @@ export default function Galerie(props){
 }
 
 export async function getStaticProps() {
-    const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/galerie/")
+    const res = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/galerie/")
     const posts = await res.json()
     var data = []
     for (let fotografie in posts){

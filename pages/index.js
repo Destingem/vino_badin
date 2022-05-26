@@ -235,7 +235,7 @@ export default function Home(props) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/aktuality")
+  const res = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/aktuality")
   const posts = await res.json()
   var aktuality = []
   for (let aktualita in posts){
@@ -243,7 +243,7 @@ export async function getStaticProps() {
   }
   aktuality = aktuality.slice(0, 4)
 
-  const res_vina = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/sortiment")
+  const res_vina = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/sortiment")
   const raw_vina = await res_vina.json()
   var vina = []
   for(let vino in raw_vina){
@@ -253,7 +253,7 @@ export async function getStaticProps() {
     }
   }
  ;
- const res_texty = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/text")
+ const res_texty = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/text")
  const raw_texty = await res_texty.json()
  var texty = {}
  for( let text in raw_texty){

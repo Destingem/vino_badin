@@ -55,8 +55,8 @@ export default function Aktualita(props){
                <Text weight={600}  >{data.datum}</Text>
                <Text sx={{textAlign: "left"}}>{data.text}</Text>
            </div>
-          {data.priloha &&  <a  download href={data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>{data.priloha.filename}</Button></a>}
-           <Link href="/aktuality"><Button  href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>Zpět na aktuality</Button></Link>
+          {data.priloha &&  <a  download href={data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "90%"}}>{data.priloha.filename}</Button></a>}
+           <Link href="/aktuality"><Button  href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "90%"}}>Zpět na aktuality</Button></Link>
        </Media>
        <Media between={["mobile", "tablet"]}>
        <div style={{marginTop: "10vh", justifyContent: "center", textAlign: "center", padding: "0 5vw 3vw 5vw"}}>

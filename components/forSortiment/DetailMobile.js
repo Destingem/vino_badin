@@ -69,7 +69,7 @@ export default function DetailMobile(props){
       </div>
     </div>
          {props.data.priloha &&  <a download href={props.data.priloha.url}><Button color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw"}}>{props.data.priloha.filename}</Button></a>}
-      <Link href="/sortiment"><Button href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "100%"}}>Zpět na sortiment</Button></Link>
+      <Link href="/sortiment"><Button href="#" color="gray" sx={{backgroundColor: "rgb(147, 37, 37)", margin: "0 5vw 3vw 5vw", width: "90%"}}>Zpět na sortiment</Button></Link>
       </>
     )
 }
