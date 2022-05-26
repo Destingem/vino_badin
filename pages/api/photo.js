@@ -1,19 +1,12 @@
-
+import fs from 'fs'
+import path from 'path'
 export default function handler(req, res){
 
     
-  
-    
+  console.log(req.query.adress);
+ 
+  const imageBuffer = fs.readFileSync(req.query.adress)
     const url = req.body.url;
-    console.log("calling url", url);
-    request.get(
-      url,
-      (error, res, body) => {
-        if (error) {
-          console.error(error)
-          return response.status(200).json({'content': "error"}) 
-  }
-          return response.status(200).json(JSON.parse(body))
-          },
-        )
+  res.setHeader('Content-Type', 'image/jpg')
+  res.send(imageBuffer)
 }
