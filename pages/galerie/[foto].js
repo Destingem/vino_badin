@@ -56,7 +56,7 @@ console.log(props.data[0].acf.fotografie.sizes);
 }
 
 export async function getStaticProps(props) {
-    const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/galerie/");
+    const res = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/galerie/");
     const posts = await res.json();
     var data = posts.filter((post) => {
       console.log(props.params.foto);
@@ -85,7 +85,7 @@ export async function getStaticProps(props) {
   
   export async function getStaticPaths() {
     // Call an external API endpoint to get posts
-    const res = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/galerie/");
+    const res = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/galerie/");
   
     const posts = await res.json();
     // Get the paths we want to pre-render based on posts

@@ -257,7 +257,7 @@ export default function Kontakt(props) {
 }
 // <section className={styles.section}></section>
 export async function getStaticProps(){
-  const res_texty = await fetch("https://206.189.56.129:1338/wp-json/wp/v2/text")
+  const res_texty = await fetch("https://138.68.106.100:1338/wp-json/wp/v2/text")
   const raw_texty = await res_texty.json()
   var texty = {}
   for( let text in raw_texty){

@@ -67,6 +67,7 @@ console.log(props);
                     display: "flex",
                     flexDirection: "column",
                     textAlign: "left",
+                    width: "90vw"
                   }}
                 >
                   <Card.Section>
