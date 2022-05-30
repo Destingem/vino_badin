@@ -222,6 +222,9 @@ export default function Kontakt(props) {
            <MdAccountTree style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
            <Text size="xl">{props.texty.ic}</Text>
            </div>}
+           {props.texty.tel && <div className={styles.textWithIcon}><BsFillTelephoneFill style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}} />{props.texty.tel}</div>}
+           
+
            {props.texty.email && <div className={styles.textWithIcon}>
            <MdAlternateEmail style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
            <Text size="xl">{props.texty.email}</Text>
@@ -281,6 +284,9 @@ export async function getStaticProps(){
         case "kontakt-text":
           texty = {...texty, text: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
            break;
+        case "tel":
+          texty = {...texty, tel: thisText.content.rendered.replace(/(<([^>]+)>)/gi, "")}
+          break;
      
       default:
         
