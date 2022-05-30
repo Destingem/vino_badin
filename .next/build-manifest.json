@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/edSOWmvqtl6hc9u6CC6GI/_buildManifest.js",
-    "static/edSOWmvqtl6hc9u6CC6GI/_ssgManifest.js",
-    "static/edSOWmvqtl6hc9u6CC6GI/_middlewareManifest.js"
+    "static/GGqq9Ev1jE8Ji9b7rkXQM/_buildManifest.js",
+    "static/GGqq9Ev1jE8Ji9b7rkXQM/_ssgManifest.js",
+    "static/GGqq9Ev1jE8Ji9b7rkXQM/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -89,11 +89,11 @@
       "static/chunks/main-fc7d2f0e2098927e.js",
       "static/chunks/252f366e-be714792b9e632d0.js",
       "static/chunks/1bfc9850-7161ee3f853f6ac1.js",
-      "static/chunks/0c428ae2-38cf8b54bc57a507.js",
+      "static/chunks/0c428ae2-e97a59cdc7741da7.js",
       "static/chunks/315-8a47a759b81ef76f.js",
       "static/chunks/718-fe2e27bba36f37db.js",
       "static/css/d054f0141919fc7a.css",
-      "static/chunks/pages/kontakt-d1c19cb3142b6d0c.js"
+      "static/chunks/pages/kontakt-3e43b21aed033f95.js"
     ],
     "/o-nas": [
       "static/chunks/webpack-d7b038a63b619762.js",
