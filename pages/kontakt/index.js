@@ -9,6 +9,11 @@ import {FaMapMarker} from "react-icons/fa"
 export default function Kontakt(props) {
   return (
     <>
+     <Head>
+        <title>Kontakt | Vinarštví Badinovi</title>
+        <meta name="description" content="Kontaktní informace" />
+        <link rel="icon" href="/images/logo.png" />
+      </Head>
       <Media between={["zero", "mobile"]}>
         <div className={styles.main_mobile}></div>
         <NavBar backgroundColor="#fff" />

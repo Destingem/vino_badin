@@ -10,6 +10,11 @@ console.log(props);
 console.log(props.data[0].acf.fotografie.sizes);
     return(
 <>
+<Head>
+        <title>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")} - Galerie | Vinarštví Badinovi</title>
+        <meta name="description" content="Rodinné vinařství v Moravský Bránicích" />
+        <link rel="icon" href="/images/logo.png" />
+      </Head>
     <Media between={["zero", "mobile"]}>
         <div style={{display: "flex", flexDirection: "row"}}>
             <NavBar />

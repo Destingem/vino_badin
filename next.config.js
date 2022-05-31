@@ -6,7 +6,11 @@ const nextConfig = {
   },
   serverRuntimeConfig: {
     alfa: process.env.NODE_TLS_REJECT_UNAUTHORIZED='0',
-  }
+  },
+  i18n: {
+    locales: ["cs"],
+    defaultLocale: "cs",
+  },
 }
 
 module.exports = nextConfig
