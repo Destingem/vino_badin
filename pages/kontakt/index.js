@@ -6,6 +6,7 @@ import { Media } from "../Media";
 import styles from "./kontakt.module.css";
 import {BsPersonCircle,BsFillTelephoneFill } from "react-icons/bs"
 import {FaMapMarker} from "react-icons/fa"
+import Head from "next/head";
 export default function Kontakt(props) {
   return (
     <>
