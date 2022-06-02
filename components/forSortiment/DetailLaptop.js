@@ -26,6 +26,7 @@ export default function DetailLaptop(props){
           <div style={{width: "60%"}}>
           <Text
           size="xl"
+          component="h1"
           sx={{
             color: "black",
             fontSize: props.data.nadpis.length < 20 ?  "3vw" : "1vw",

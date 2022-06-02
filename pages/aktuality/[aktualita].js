@@ -41,6 +41,7 @@ export default function Aktualita(props){
            <div style={{marginTop: "10vh", justifyContent: "center", textAlign: "center", padding: "0 5vw 3vw 5vw"}}>
            <Text
           size="xl"
+          component="h1"
           sx={{
             color: "black",
             fontSize: data.nadpis.length < 20 ?  "10vw" : "4vw",

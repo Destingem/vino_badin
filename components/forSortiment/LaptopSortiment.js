@@ -32,6 +32,7 @@ export default function LaptopSortiment(props){
             <Text
               size="xl"
               sx={{ color: "white", fontSize: "6rem", textAlign: "center" }}
+              component="h1"
             >
               Sortiment
             </Text>

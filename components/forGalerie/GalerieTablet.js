@@ -29,6 +29,7 @@ export default function GalerieTablet(props){
               }}
             >
               <Text
+                component="h1"
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >

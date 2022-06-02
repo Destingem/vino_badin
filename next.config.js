@@ -11,6 +11,8 @@ const nextConfig = {
     locales: ["cs"],
     defaultLocale: "cs",
   },
+  siteUrl: "https://www.vinarstvibadin.cz" || 'https://vinarstvibadin.cz',
+  generateRobotsTxt: true,
 }
 
 module.exports = nextConfig

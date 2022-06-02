@@ -42,6 +42,7 @@ export default function Kontakt(props) {
               }}
             >
               <Text
+                component="h1"
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >
@@ -127,6 +128,7 @@ export default function Kontakt(props) {
             >
               <Text
                 size="xl"
+                component="h1"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >
                 Kontakt
@@ -207,6 +209,7 @@ export default function Kontakt(props) {
             >
               <Text
                 size="xl"
+                component="h1"
                 sx={{ color: "white", fontSize: "6rem", textAlign: "center" }}
               >
                 Kontakt

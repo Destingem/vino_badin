@@ -14,11 +14,12 @@ export default function DetailMobile(props){
         <div style={{textAlign: "center"}}>
         <Text
         size="xl"
+        component="h1"
         sx={{
           color: "black",
           fontSize: props.data.nadpis.length < 20 ?  "10vw" : "3vw",
           marginTop: "0",
-        
+          
           fontWeight: "600",
         
         }}

@@ -45,6 +45,7 @@ export default function Onas() {
               }}
             >
               <Text
+              component="h1"
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >

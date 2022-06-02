@@ -8,6 +8,7 @@ export default function DetailTablet(props){
       <>
         <div style={{marginTop: "10vh", justifyContent: "center", textAlign: "center", padding: "0 5vw 3vw 5vw"}}>
         <Text
+        component="h1"
        size="xl"
        sx={{
          color: "black",

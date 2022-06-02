@@ -45,6 +45,7 @@ export default function Aktuality(props) {
               <Text
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
+                component="h1"
               >
                 Aktuality
               </Text>

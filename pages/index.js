@@ -26,6 +26,7 @@ export default function Home(props) {
         <title>Vinarštví Badinovi</title>
         <meta name="description" content="Rodinné vinařství v Moravský Bránicích" />
         <link rel="icon" href="/images/logo.png" />
+        <meta name="google-site-verification" content="PQuzoX-t9YNIik7q_sh0ts1vY0q9C-ByhgDpyK_08Dk" />
       </Head>
 
       <Media between={["tablet", "tv"]}>
@@ -35,6 +36,7 @@ export default function Home(props) {
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "6.5vw", marginTop: "17%" }}
+              component="h1"
             >
               Vinařství Badinovi
             </Text>
@@ -103,12 +105,14 @@ export default function Home(props) {
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "13vw", marginTop: "14vh" }}
+              component="h1"
             >
               Vinařství
             </Text>
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "20vw"}}
+              component="h1"
             >
               Badinovi
             </Text>
@@ -160,12 +164,14 @@ export default function Home(props) {
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "10vw", marginTop: "15vh" }}
+              component="h1"
             >
               Vinařství
             </Text>
             <Text
               size="xl"
               sx={{ color: "#C4C4C4", fontSize: "15vw"}}
+              component="h1"
             >
               Badinovi
             </Text>

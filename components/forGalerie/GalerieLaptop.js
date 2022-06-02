@@ -31,6 +31,7 @@ export default function GalerieLaptop(props){
               }}
             >
               <Text
+                component="h1"
                 size="xl"
                 sx={{ color: "white", fontSize: "6rem", textAlign: "center" }}
               >

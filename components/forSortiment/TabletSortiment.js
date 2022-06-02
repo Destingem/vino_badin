@@ -33,6 +33,7 @@ export default function TabletSortiment(props){
             <Text
               size="xl"
               sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
+              component="h1"
             >
               Sortiment
             </Text>

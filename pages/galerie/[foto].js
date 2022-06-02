@@ -21,7 +21,7 @@ console.log(props.data[0].acf.fotografie.sizes);
             <div style={{marginTop: "10vh", textAlign: "center", alignItems: "center", width: "100%"}}>
                 
                 <Image src={props.data[0].acf.fotografie.sizes.large} width={props.data[0].acf.fotografie.sizes["large-width"]} height={props.data[0].acf.fotografie.sizes["large-height"]}></Image>
-                <Text>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+                <Text component="h1">{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
                 <Text>{props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
                 <Link href="/galerie"><Button>Zpět na Galerii</Button></Link>
             </div>
@@ -33,7 +33,7 @@ console.log(props.data[0].acf.fotografie.sizes);
             <div style={{marginTop: "10vh", textAlign: "center", alignItems: "center", width: "100%"}}>
                 
                 <Image src={props.data[0].acf.fotografie.sizes.large} width={props.data[0].acf.fotografie.sizes["large-width"]} height={props.data[0].acf.fotografie.sizes["large-height"]}></Image>
-                <Text>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+                <Text component="h1">{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
                 <Text>{props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
                 <Link href="/galerie"><Button>Zpět na Galerii</Button></Link>
             </div>
@@ -43,7 +43,7 @@ console.log(props.data[0].acf.fotografie.sizes);
     <div style={{display: "flex", flexDirection: "row"}}>
             <NavBar />
             <div style={{marginTop: "10vh", textAlign: "center", alignItems: "center", width: "100%"}}>
-            <Text size="xl" sx={{color: "rgb(147, 37, 37)", fontWeight: 600, fontSize: "3rem"}}>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
+            <Text component="h1" size="xl" sx={{color: "rgb(147, 37, 37)", fontWeight: 600, fontSize: "3rem"}}>{props.data[0].title.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
             <Text>{props.data[0].content.rendered.replace(/(<([^>]+)>)/gi, "")}</Text>
                 <Image src={props.data[0].acf.fotografie.sizes.large} width={props.data[0].acf.fotografie.sizes["large-width"]} height={props.data[0].acf.fotografie.sizes["large-height"]}></Image>
                 

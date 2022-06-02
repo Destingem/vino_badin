@@ -33,7 +33,7 @@ export default function NotFound() {
       </Head>
 
       <div>
-        <Text size="lg">Stránka nenalezena</Text>
+        <Text size="lg" component="h1">Stránka nenalezena</Text>
         <Text size="md">Budete přesměrováni během {cas} sekund</Text>
       </div>
     </>

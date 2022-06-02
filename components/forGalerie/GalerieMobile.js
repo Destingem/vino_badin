@@ -30,6 +30,7 @@ export default function GalerieMobile(props){
               }}
             >
               <Text
+                component="h1"
                 size="xl"
                 sx={{ color: "white", fontSize: "13vw", textAlign: "center" }}
               >
