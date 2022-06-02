@@ -26,10 +26,11 @@ export default function Home(props) {
         <title>Vinarštví Badinovi</title>
         <meta name="description" content="Rodinné vinařství v Moravský Bránicích" />
         <link rel="icon" href="/images/logo.png" />
-        <meta name="google-site-verification" content="PQuzoX-t9YNIik7q_sh0ts1vY0q9C-ByhgDpyK_08Dk" />
+        
       </Head>
 
       <Media between={["tablet", "tv"]}>
+      
         <div className={styles.main_laptop}>
           <section className={styles.firstSection_laptop}>
          <NavBar backgroundColor="#eeeeeee2" />
