@@ -32,7 +32,12 @@ class _Document extends next_document["default"] {
     render() {
         return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(next_document.Html, {
             children: [
-                /*#__PURE__*/ jsx_runtime_.jsx(next_document.Head, {}),
+                /*#__PURE__*/ jsx_runtime_.jsx(next_document.Head, {
+                    children: /*#__PURE__*/ jsx_runtime_.jsx("meta", {
+                        name: "google-site-verification",
+                        content: "PQuzoX-t9YNIik7q_sh0ts1vY0q9C-ByhgDpyK_08Dk"
+                    })
+                }),
                 /*#__PURE__*/ (0,jsx_runtime_.jsxs)("body", {
                     children: [
                         /*#__PURE__*/ jsx_runtime_.jsx(next_document.Main, {}),

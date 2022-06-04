@@ -54,19 +54,20 @@ export default function Kontakt(props) {
            <Text size="xl"  weight={600} sx={{fontSize: "8vw"}}>Vinařství Badin</Text>
            <div className={styles.textWithIcon}>
            <BsPersonCircle style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">František Badin</Text>
+           <Text size="xl">{props.texty.osoba}</Text>
            </div>
            <div className={styles.textWithIcon}>
            <FaMapMarker style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">Moravské Bránice č.p. 383</Text>
+           <Text size="xl">{props.texty.adresa}</Text>
            </div>
            <div className={styles.textWithIcon}>
            <MdAccountTree style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">IČ: 46912126</Text>
+           <Text size="xl">{props.texty.ic}</Text>
            </div>
+           {props.texty.tel && <div className={styles.textWithIcon}><BsFillTelephoneFill style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}} /> <Text size="xl">{props.texty.tel}</Text></div>}
            <div className={styles.textWithIcon}>
            <MdAlternateEmail style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
-           <Text size="xl">info@vinarstvibadin.cz</Text>
+           <Text size="xl">{props.texty.email}</Text>
            </div>
           </section>
           <section className={styles.section_2_mobile}>
@@ -77,9 +78,7 @@ export default function Kontakt(props) {
               Kde nás najdete
             </Text>
             <Text>
-            Víno prodáváme ve vlastním sklepě v Moravských Bránicích od roku
-            2008. V roce 2020 jsme sklep rekonstruovali. V nabídce máme prodej
-            vín v lahvích, v bag in boxech a stáčených do PET lahví.
+            {props.texty.text}
             </Text>
             <div class="gmap_canvas" style={{width: "100%", height: "100%", alignItems: "center", display: "flex", flexDirection: "column"}}>
             <iframe
@@ -150,10 +149,12 @@ export default function Kontakt(props) {
            <MdAccountTree style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
            <Text size="xl">{props.texty.ic}</Text>
            </div>}
+           {props.texty.tel && <div className={styles.textWithIcon}><BsFillTelephoneFill style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}} /> <Text size="xl">{props.texty.tel}</Text></div>}
            {props.texty.email && <div className={styles.textWithIcon}>
            <MdAlternateEmail style={{color: "rgb(147, 37, 37)", marginTop: "0.5vh", marginRight: "2vw"}}/> 
            <Text size="xl">{props.texty.email}</Text>
            </div>}
+           
           </section>
           <section className={styles.section_2_tablet}>
             
