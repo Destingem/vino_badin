@@ -1,6 +1,6 @@
 import { getServerSideSitemapIndex ,getServerSideSitemap } from "next-sitemap";
 
-const siteUrl = "https://vinatstvibadin.cz/";
+const siteUrl = "https://vinarstvibadin.cz/";
 
 module.exports = {
   siteUrl,
