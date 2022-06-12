@@ -21,7 +21,7 @@ export default function NavBar(props) {
         >
           <Link href="/">
             <div className={styles.header_mobile}>
-              <Image src="/images/logo.png" width={"40%"} height={"40%"} />
+              <Image src="/images/logo.png" width={40} height={40} layout="fill" alt="Vinařství Badinovi - logo" />
               <Text size="xl">Vinařství Badinovi</Text>
             </div>
           </Link>
