@@ -5,9 +5,9 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/9UXFK8EJqoTaBbhIZhwMb/_buildManifest.js",
-    "static/9UXFK8EJqoTaBbhIZhwMb/_ssgManifest.js",
-    "static/9UXFK8EJqoTaBbhIZhwMb/_middlewareManifest.js"
+    "static/InTEZWSvirbnfrGOObllO/_buildManifest.js",
+    "static/InTEZWSvirbnfrGOObllO/_ssgManifest.js",
+    "static/InTEZWSvirbnfrGOObllO/_middlewareManifest.js"
   ],
   "pages": {
     "/": [
@@ -103,12 +103,6 @@
       "static/chunks/718-fe2e27bba36f37db.js",
       "static/css/36e1c6cfe9a259d6.css",
       "static/chunks/pages/o-nas-824c8b02da6c4633.js"
-    ],
-    "/server-sitemap-index.xml": [
-      "static/chunks/webpack-d7b038a63b619762.js",
-      "static/chunks/framework-a87821de553db91d.js",
-      "static/chunks/main-6fc1304f0fc00875.js",
-      "static/chunks/pages/server-sitemap-index.xml-b742af678c992e3d.js"
     ],
     "/sortiment": [
       "static/chunks/webpack-d7b038a63b619762.js",
