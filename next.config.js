@@ -13,6 +13,12 @@ const nextConfig = {
   },
   siteUrl: "https://www.vinarstvibadin.cz" || 'https://vinarstvibadin.cz',
   generateRobotsTxt: true,
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      require("./scripts/sitemap-generator");
+    }
+    return config;
+  },
 }
 
 module.exports = nextConfig
