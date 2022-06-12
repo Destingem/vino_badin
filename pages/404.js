@@ -1,7 +1,7 @@
 import { Text } from "@mantine/core";
 import { useRouter } from "next/dist/client/router";
 import { useEffect, useState } from "react";
-
+import Head from "next/head";
 export default function NotFound() {
   const [cas, setCas] = useState(7);
   const router = useRouter();
