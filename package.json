@@ -20,7 +20,6 @@
     "@mantine/next": "^4.2.2",
     "@mantine/notifications": "^4.2.2",
     "@mantine/prism": "^4.2.2",
-    "@mantine/rte": "^4.2.2",
     "@mantine/spotlight": "^4.2.2",
     "dayjs": "^1.11.2",
     "globby": "^11.0.1",
