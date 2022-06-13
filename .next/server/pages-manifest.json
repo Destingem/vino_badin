@@ -1,20 +1,6 @@
 {
-  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/api/data": "pages/api/data.js",
-  "/api/hello": "pages/api/hello.js",
-  "/api/photo": "pages/api/photo.js",
-  "/": "pages/index.js",
-  "/aktuality/[aktualita]": "pages/aktuality/[aktualita].js",
-  "/aktuality": "pages/aktuality.js",
-  "/galerie/[foto]": "pages/galerie/[foto].js",
-  "/kontakt": "pages/kontakt.js",
-  "/sortiment": "pages/sortiment.js",
-  "/sortiment/[detail]": "pages/sortiment/[detail].js",
-  "/galerie": "pages/galerie.js",
-  "/cs/500": "pages/cs/500.html",
-  "/cs/404": "pages/cs/404.html",
-  "/cs/o-nas": "pages/cs/o-nas.html",
-  "/cs/Media": "pages/cs/Media.html"
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
 }

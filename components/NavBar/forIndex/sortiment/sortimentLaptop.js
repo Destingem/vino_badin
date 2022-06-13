@@ -53,7 +53,7 @@ export default function SortimentLaptop(props) {
               <Grid.Col span={3} sx={{aspectRatio: 1}}>
                 <Card shadow="md" sx={{display: "flex", flexDirection: "column", textAlign: "left"}}>
                   <Card.Section>
-                    {vino.image.sizes.medium_large && <Image  src={vino.image.sizes.medium_large}
+                    {vino && vino.image && vino.image.sizes && vino.image.sizes.medium_large && <Image  src={vino.image.sizes.medium_large}
                       layout="responsive"
                       width={vino.image.sizes["medium_large-width"]}
                       height={vino.image.sizes["medium_large-height"]}
