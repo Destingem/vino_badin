@@ -53,12 +53,12 @@ export default function SortimentLaptop(props) {
               <Grid.Col span={3} sx={{aspectRatio: 1}}>
                 <Card shadow="md" sx={{display: "flex", flexDirection: "column", textAlign: "left"}}>
                   <Card.Section>
-                    <Image  src={vino.image.sizes.medium_large}
+                    {vino.image.sizes.medium_large && <Image  src={vino.image.sizes.medium_large}
                       layout="responsive"
                       width={vino.image.sizes["medium_large-width"]}
                       height={vino.image.sizes["medium_large-height"]}
                       
-                      />
+                      />}
                   </Card.Section>
                   <Group sx={{justifyContent: "space-between"}}>
                     <Text weight={700} size="lg" >{vino.nazev}</Text>
